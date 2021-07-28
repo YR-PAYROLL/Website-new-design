@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  outline: none;
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr !important;
+}
+
+.hover-clr:hover {
+  color: #ff7b00 !important;
+}
+
+.clr-hover {
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.clr-hover:hover {
+  color: #da6900 !important;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.color {
+  color: #ff7b00;
+}
+
+.break {
+  height: 5px;
+  width: 100%;
+}
+
+.navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.zindex-overall {
+  z-index: 10000000;
+}
+
+.calc-result {
+  background: rgba(0, 0, 0, 0.95);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.calculator-page-title {
+  background-color: #ff7b00;
+}
+
+.calc-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 8rem;
+  padding-left: 8rem;
+  cursor: pointer;
+  border: 2px solid #32383d;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.calc-btn:hover {
+  background: #32383d;
+  border-color: white;
+  color: white;
+}
+
+.main-calculator-page label {
+  font-size: 0.9rem;
+}
+
+.main-calculator-page .result-container {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 400ms ease-in-out;
+  transition: 400ms ease-in-out;
+}
+
+.main-calculator-page .result-container .box {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.main-calculator-page .result-container .btn-close {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1111111111;
+  cursor: pointer;
+}
+
+.main-calculator-page .result-container .form-item {
+  -webkit-transition: background 150ms ease;
+  transition: background 150ms ease;
+}
+
+.main-calculator-page .result-container .form-item:hover {
+  background-color: #32383d;
+}
+
+.main-calculator-page .result-container.open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.main-calculator-page .result-container.open .box {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 400ms ease-in-out;
+  transition: 400ms ease-in-out;
+}
+
+.error-msg {
+  opacity: 0;
+  -webkit-transition: 350ms ease !important;
+  transition: 350ms ease !important;
+}
+
+.error-msg.show {
+  opacity: 1;
+}
+
+input.is-invalid {
+  border: 1.75px solid red !important;
+}
+
+.date-input {
+  -webkit-box-shadow: 0 0 0 0rem white !important;
+          box-shadow: 0 0 0 0rem white !important;
+}
+
+header .contact-bar {
+  background-color: #32383d;
+}
+
+header nav .nav-link:hover {
+  color: #ff7b00 !important;
+}
+
+header nav .dropdown-menu .dropdown-item:hover {
+  background-color: #32383d;
+}
+
+main .hero-container {
+  background: url("/assets/imgs/landing-page-bg.png");
+  background-color: rgba(0, 0, 0, 0.95);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main .hero-container #hero-section h1 {
+  font-size: 4rem;
+}
+
+main .hero-container #hero-section h1 .sub-heading {
+  font-size: 0.4em;
+}
+
+main .hero-container #hero-section .main-text ul {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+main .hero-container #hero-section button.cta {
+  background: #ff7b00;
+  outline: none;
+  border-color: transparent;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+main .hero-container #hero-section button.cta:hover {
+  border-color: #ff7b00;
+  background: transparent;
+  color: #ff7b00 !important;
+}
+
+main #inline-text-section {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#b0c3d6));
+  background: linear-gradient(to top, #ffffff 0%, #b0c3d6 100%);
+}
+
+main #who-we-are img {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 50%;
+}
+
+main #services .card {
+  cursor: pointer;
+  border-color: #ff7b00;
+  border-radius: 15px;
+}
+
+main #services .card .card-img-top {
+  width: 150px;
+  height: 150px;
+}
+
+main #services .card i {
+  -webkit-transition: opacity 250ms ease;
+  transition: opacity 250ms ease;
+}
+
+main #services .card .card-text {
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: height 400ms ease-in-out;
+  transition: height 400ms ease-in-out;
+}
+
+main #services .card i {
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+main #testimonials {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#b0c3d6));
+  background: linear-gradient(to bottom, #ffffff 0%, #b0c3d6 100%);
+}
+
+main #testimonials .carousel-control-next {
+  position: absolute;
+  left: 100%;
+  width: 5%;
+}
+
+main #testimonials .carousel-control-prev {
+  position: absolute;
+  left: 0%;
+  width: 5%;
+}
+
+main #testimonials #carouselExampleControls {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+/*# sourceMappingURL=style.css.map */

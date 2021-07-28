@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+    <script src="/assets/js/fix-main.js" defer></script>
+    <script src="/assets/js/smooth-scroll.js" defer></script>
+    <script src="/assets/js/fix-hero-section.js" defer></script>
+    <script src="/assets/js/service-controller.js" defer></script>
+    <script src="/assets/js/testimonials-controller.js" defer></script>
+    <!-- Title -->
+    <title>YR-Payroll</title>
+</head>
+
+<body class="">
+    <header class="ltr w-100 fixed-top shadow-sm">
+        <div class="ltr conatiner row contact-bar align-content-center justify-content-center w-100 m-0">
+            <span class="col-2 text-center text-light">
+                <a class="text-light hover-clr fs-4" href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </span>
+            <span class="col-2 text-center text-light">
+                <a href="#" class="text-light hover-clr fs-4 text-decoration-none">
+                    <span class="desktop-show fs-6 ms-1">074-749-0061</span>
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+            </span>
+            <span class="col-2 text-center text-light">
+                <a href="#" class="text-light hover-clr fs-4">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </span>
+        </div>
+        <nav class="ltr navbar navbar-expand-lg navbar-dark bg-dark w-100 m-0 text-center">
+            <div class="ltr container align-content-center">
+                <a class="navbar-brand align-content-center justify-content-center d-flex" href="/">
+                    <span class="align-self-center ms-2 fs-6">חשבות שכר <span class="d-block">במיקור חוץ</span></span>
+                    <img src="assets/imgs/YR-logo.svg" alt="" width="75" height="50"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="justify-content-start collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="text-center navbar-nav">
+                        <li class="nav-item">
+                            <a class="scroll-btn nav-link active" aria-current="page" href="#hero-section">בית</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="scroll-btn nav-link active" href="#who-we-are">מי אנחנו?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="scroll-btn nav-link active" href="#why-us">למה אנחנו?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="scroll-btn nav-link active" href="#services">השירותים שלנו</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="scroll-btn nav-link active" href="#testimonials">המלצות</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                מחשבוני שכר
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item text-light text-end" href="/calculators/brutto-neto-calculator.html">מחשבון ברוטו-נטו | עלות
+                                        מעביד</a></li>
+                                <li><a class="dropdown-item text-light text-end" href="/calculators/vacation-and-recovery.html">מחשבון חופשה / מחשבון
+                                        הבראה</a></li>
+                                <li><a class="dropdown-item text-light text-end" href="#">מחשבון הודעה מוקדמת</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="scroll-btn nav-link active" href="#">צרו קשר</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid position-relative p-0 mb-5">
+        <div class="hero-container container-fluid py-5">
+            <section id="hero-section"
+                class="text-light hero-section container d-flex align-content-center justify-content-center">
+                <div class="container align-self-center align-content-center justify-content-center d-flex flex-column">
+                    <h1 class="heading text-center mb-5">
+                        י.ר <span class="color">שכר</span>
+                        <span class="sub-heading fw-bolder d-block"><span class="color">שירותי חשבות שכר</span> במיקור
+                            חוץ</span>
+                    </h1>
+                    <div class="main-text text-center align-items-center justify-content-center mb-5">
+                        <ul class="text-end fs-6">
+                            <li>
+                                חשבות שכר בתוכנת בניה ויישום הסכמי נוכחות
+                            </li>
+                            <li>
+                                ליווי אישי ומקצועי לאורך כל הדרך
+                            </li>
+                            <li>
+                                גישה ישירה לנתוני השכר והנוכחות אונליין מכל מקום ובכל רגע נתון!
+                            </li>
+                        </ul>
+                    </div>
+                    <button href="#" class="scroll-btn w-25 mx-auto cta fs-5 fw-bolder text-dark rounded-pill border-2 py-2 px-5 mt-5">
+                        דברו
+                        איתנו
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <section id="inline-text-section"
+            class="inline-text-section container-fluid py-5 px-3 align-content-center justify-content-center text-center">
+            <div class="heading mb-3">
+                <h1 class="color fs-2">
+                    השקט שלך זו המומחיות שלנו!
+                    <span class="d-block fs-1 text-dark">
+                        נעים להכיר!
+                    </span>
+                </h1>
+            </div>
+            <div class="main-text">
+                <p class="p-0 m-0 fs-5">
+                    אנו מבינים שחשוב לך יחס אישי וטיפול מסור.
+                </p>
+                <p class="p-0 m-0 fs-5">
+                    אנו מבינים שאתה צריך ביטחון, שקט ואמון מול העובדים.
+                </p>
+                <p class="p-0 m-0 fs-5">
+                    לכן אנחנו כאן, כדי לתת לך רמה גבוהה של שירות, ביטחון וליווי צמוד.
+                </p>
+            </div>
+        </section>
+
+        <section id="who-we-are" class="who-we-are w-100">
+            <div class="container pt-5 pb-2 px-5 d-flex flex-row-reverse">
+                <img src="/assets/imgs/profile-img.jpg" alt="">
+                <div class="text-container container d-flex flex-column align-content-center justify-content-center">
+                    <h1 class="heading color fs-1 mb-3">
+                        יהודה רייזנר
+                        <span class="fs-4 text-dark d-block">מנהל לשכת השכר</span>
+                    </h1>
+                    <div class="main-text">
+                        <p class="fs-5 p-0 m-0">
+                            חשב שכר מוסמך ובעל תואר BA בכלכלה ומנהל עסקים.
+                        </p>
+                        <p class="fs-5 p-0 m-0">
+                            עוסק בעולם השכר והנוכחות משנת 2013.
+                        </p>
+                        <p class="fs-5 p-0 m-0">
+                            צבר ניסיון רב בעבודה עם עשרות לקוחות.
+                        </p>
+                        <p class="fs-5 p-0 m-0">
+                            מעודכן באופן שוטף בדיני עבודה ובשינויים החלים במשק.
+                        </p>
+                        <p class="fs-5 p-0 m-0">
+                            מתמחה ב׳פריוריטי׳ שכר ונוכחות.
+                        </p>
+                        <p class="fs-5 p-0 m-0">
+                            מפתח תהליכי עבודה מסודרים להכנת שכר באופן מבוקר ומהיר.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="container break bg-secondary bg-gradient mb-5 mt-5 rounded-pill"></div>
+
+        <section id="why-us"
+            class="why-us w-100 pt-2 pb-2 container-fluid align-items-center justify-content-center d-grid text-center">
+            <h1 class="heading fs-1 mb-3">
+                <span class="color">למה דווקא</span> י.ר שכר
+                <span class="color d-block fs-2">שירותי חשבות שכר במיקור חוץ?</span>
+            </h1>
+            <div class="main-text">
+                <p class="p-0 m-0 fs-5">
+                    כי יש לנו רקורד עשיר עם עשרות לקוחות.
+                </p>
+                <p class="p-0 m-0 fs-5">
+                    כי אנחנו יסודיים, עובדים מסודר עם בקרה צמודה.
+                </p>
+                <p class="p-0 m-0 fs-5">
+                    כי אנחנו מעודכנים כל הזמן בדיני העבודה והחוקים במשק.
+                </p>
+                <p class="p-0 m-0 fs-5">
+                    כי איתנו תקבלו מענה מקצועי בכל שאלות השכר.
+                </p>
+                <p class="p-0 m-0 fs-5">
+                    כי אצלנו יש לכם זמינות בכל רגע.
+                </p>
+                <p class="p-0 m-0 fs-5">
+                    כי איתנו יש לכם התנהלות שוטפת מול רשויות המס.
+                </p>
+                <p class="p-0 m-0 fs-5">
+                    כי איתנו נותנים גם שירות של תפעול פנסיוני או מנהלים עבורכם ערוץ ישיר מול המתפעל/סוכן שלכם.
+                </p>
+
+                <p class="mt-5 fs-2 fw-bold lh-1 mb-5">
+                    כי מובטח לכם ראש שקט
+                    <span class="d-block p-0">בניהול השכר של העובדים בארגון!</span>
+                </p>
+                <p class="fs-5">
+                    עוד לא השתכנעתם..?
+                    <span class="d-block">הנה מה שמספרים על העבודה איתנו</span>
+                    <span class="d-block">לחצו ל<a href="#"
+                            class="color text-decoration-none clr-hover">המלצות</a></span>
+                </p>
+            </div>
+
+        </section>
+        <div class="container break bg-secondary bg-gradient mb-5 mt-5 rounded-pill"></div>
+
+        <section id="services" class="services container-fluid pt-2 pb-5">
+            <h1 class="heading fs-1 mb-5 color text-center">
+                אז מה אנחנו מציעים?
+            </h1>
+
+            <div class="services-box container d-flex gap-4 justify-content-around align-items-start">
+                <div
+                    class="card service border-3 border-top-0 p-4 w-50 align-items-center justify-content-center h-100">
+                    <img src="assets/imgs/external.svg" class="card-img-top" alt="...">
+                    <div class="card-body position-relative">
+                        <h5 class="card-title fs-3 text-center mb-3">
+                            שירותי שכר חיצוני
+                            <i class="fas fa-angle-down d-block mt-4 position-absolute bottom-0"></i>
+                        </h5>
+                        <ul class="card-text">
+                            <li class="fs-5 mt-2">
+                                שירותי שכר חיצוני במסגרתו הלקוח מקבל מערכת לצפייה בתלושים ובדוחות אונליין.
+                            </li>
+                            <li class="fs-5 mt-2">
+                                נתוני השכר נגישים ללקוח מכל מקום ומכל מחשב.
+                            </li>
+                            <li class="fs-5 mt-2">
+                                שירות מקיף של כל תהליך השכר החל מהקמת עובד חדש ועד גמר חשבון והפקת טופס 161.
+                            </li>
+                            <li class="fs-5 mt-2">
+                                שידור קבצים והפקת דוחות שוטפים ושנתיים לביטוח לאומי ומס הכנסה.
+                            </li>
+                            <li class="fs-5 mt-2">
+                                הפקת ממשק אחיד של קופות גמל לגורם המתפעל/סוכן הגמל.
+                            </li>
+                            <li class="fs-5 mt-2">
+                                הפקת קובץ פקודת שכר.
+                            </li>
+                            <li class="fs-5 mt-2">
+                                הפקת דוחות באופן מהיר ללקוח, על פי דרישה.
+                            </li>
+                            <li class="fs-5 mt-2">
+                                מענה מהיר וזמין בכל שאלה ועניין.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="card service border-3 border-top-0 p-4 w-50 align-items-center justify-content-center h-100">
+                    <img src="assets/imgs/watch.svg" class="card-img-top" alt="...">
+                    <div class="card-body position-relative">
+                        <h5 class="card-title fs-4 text-center mb-3">
+                            מערכת נוכחות משולבת
+                            <i class="fas fa-angle-down d-block mt-4 position-absolute bottom-0"></i>
+                        </h5>
+                        <div class="card-text">
+                            <p class="p-0 m-0 fs-5">
+                                לצד ניהול השכר ניתנת אפשרות ללקוח לקבל גישה למערכת נוכחות המקושרת ישירות למודול השכר,
+                                וליהנות מנתונים מסונכרנים באופן מיידי.
+                                <span class="d-block">* מתאים ללקוחות העובדים עם מערכת שכר בענן.</span>
+                            </p>
+
+                            <ul class="mt-3">
+                                <li class="fs-5 mt-2">
+                                    תמיכה שוטפת ביישום ובניית הסכמי הנוכחות לעובדים.
+                                </li>
+                                <li class="fs-5 mt-2">
+                                    יעילות בעבודה של מערכת אחת המשלבת נוכחות ושכר.
+                                </li>
+                                <li class="fs-5 mt-2">
+                                    חיסכון משמעותי בזמן ומניעת עבודה כפולה.
+                                </li>
+                                <li class="fs-5 mt-2">
+                                    ממשק עבודה המרכז את כל הנתונים במקום אחד ומקצר את תהליכי הכנת השכר.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials container-fluid justify-content-center py-5">
+            <h1 class="heading fs-1 mb-5 color text-center">
+                הנה מה שמספרים עלינו . . .
+            </h1>
+
+            <div id="carouselExampleControls"
+                class="carousel h-100 slide col-8 mx-auto justify-content-center position-relative rounded-3 overflow-auto"
+                data-bs-ride="carousel">
+                <div class="carousel-inner bg-white rounded-3">
+                    <div class="carousel-item h-100 active">
+                        <div class="card py-2 px-5 rounded-3 border-2">
+                            <div class="card-body">
+                                <h5 class="card-title fs-3 mb-5">
+                                    מקצועי כמוך עוד לא יצא לי לפגוש.
+                                </h5>
+                                <p class="card-text fs-5 mb-5">
+                                    כבר יצא לי לעבוד מול לשכות שכר בעבר, אבל כמוך עוד לא יצא לי לפגוש. תודה על שירות
+                                    מקצועי
+                                    ומהיר ועל התמיכה בכל נושא. אתה נכס לכל חברה שתזכה לקבל ממך שירות.
+                                </p>
+                                <div class="card-profile float-start fs-6 lh-1 fw-bold">
+                                    מירב מור
+                                    <span class="d-block">קיומרקטס</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card py-2 px-5 rounded-3 border-2  h-100">
+                            <div class="card-body">
+                                <h5 class="card-title fs-3 mb-5">
+                                    זה לא רק המקצועיות שלך זה גם מי שאתה.
+                                </h5>
+                                <p class="card-text fs-5 mb-5">
+                                    תענוג לעבוד אתך, אתה בן אדם מקצועי ונעים, וסוף סוף נושא השכר מסודר אצלנו.
+                                </p>
+                                <div class="card-profile float-start fs-6 lh-1 fw-bold">
+                                    סוזן פרבר
+                                    <span class="d-block">
+                                        וורלד קונסיל
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card py-2 px-5 rounded-3 border-2  h-100">
+                            <div class="card-body">
+                                <h5 class="card-title fs-3 mb-5">
+                                    אתה הבחירה הכי טובה, עשית לנו סדר בכל נושא השכר.
+                                </h5>
+                                <p class="card-text fs-5 mb-5">
+                                    אל לשכת השכר של יהודה הגעתי דרך המלצה, אני שמח מאוד על הבחירה שעשיתי, אני מקבל יחס
+                                    אישי
+                                    וטיפול מסור בכל עניין, יהודה מקצועי מאוד, תמיד זמין ויודע לתת מענה לכל שאלה. בזכותו
+                                    נושא
+                                    השכר מטופל בצורה מופתית.
+                                </p>
+                                <div class="card-profile float-start fs-6 lh-1 fw-bold">
+                                    גלעד רוזנצוויג
+                                    <span class="d-block">
+                                        גלמר קדם
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card py-2 px-5 rounded-3 border-2  h-100">
+                            <div class="card-body">
+                                <h5 class="card-title fs-3 mb-5">
+                                    נתת לי את הביטחון שכל נושא השכר מאורגן, יעיל ומדויק ביותר.
+                                </h5>
+                                <p class="card-text fs-5 mb-5">
+                                    אתה מצוין במה שאתה עושה, מקצועי ומבין עניין, ביצעת את המעבר לתוכנה אחרת בצורה
+                                    מושלמת. כל
+                                    הסבת הנתונים נעשתה במקצועיות וללא פשרות. אני מרוצה מאוד וממליץ לכל מי שרוצה ראש שקט
+                                    בנושא
+                                    שכר עובדים עם שירות ברמה הגבוהה ביותר.
+                                </p>
+                                <div class="card-profile float-start fs-6 lh-1 fw-bold">
+                                    אלי חורי
+                                    <span class="d-block">
+                                        אס.טי.אקס.איי
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card py-2 px-5 rounded-3 border-2  h-100">
+                            <div class="card-body">
+                                <h5 class="card-title fs-3 mb-5">
+                                    אתה איש מקצוע מהשורה הראשונה.
+                                </h5>
+                                <p class="card-text fs-5 mb-5">
+                                    תענוג לדעת שיש איש מקצוע שהוא חלק מהעסק ונותן מענה לא רק לשכר העובדים, אלא מהווה גם
+                                    כתובת
+                                    לכל שאלה בנושא דיני עבודה.
+                                    <span class="d-block">אנחנו נהנים ממך, משירות מכל הלב, יסודי ותמיד באדיבות
+                                        ובחיוך.</span>
+                                </p>
+                                <div class="card-profile float-start fs-6 lh-1 fw-bold">
+                                    יסכה אלבז
+                                    <span class="d-block">
+                                        סופר פרטס
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev carousel-nav-btn bg-dark" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon h-100" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next carousel-nav-btn bg-dark" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon h-100" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+
+        <footer class="container-fluid credit bg-dark py-1 px-5 fs-6 text-center text-light position-absolute bottom-0">
+            האתר נבנה ועוצב על ידי <a href="https://tal-mekler.com" class="color clr-hover text-decoration-none">טל מקלר
+                - Tal Mekler Developer</a>
+        </footer>
+    </main>
+
+</body>
+
+</html>

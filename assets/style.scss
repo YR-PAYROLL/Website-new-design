@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+$dark-80: #32383d;
+$font-family-sans-serif: "Poppins", sans-serif;
+$primary: rgb(255, 123, 0);
+$primary-hover: rgb(218, 105, 0);
+
+* {
+    outline: none;
+    direction: rtl;
+}
+.ltr {
+    direction: ltr !important;
+}
+.hover-clr {
+    &:hover {
+        color: $primary !important;
+    }
+}
+.clr-hover {
+    transition: 200ms ease;
+    &:hover {
+        color: $primary-hover !important;
+        filter: brightness(0.8);
+    }
+}
+.color {
+    color: $primary;
+}
+
+.break {
+    height: 5px;
+    width: 100%;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.zindex-overall {
+    z-index: 10000000;
+}
+.calc-result {
+    background: rgba(black, 0.95);
+    backdrop-filter: blur(5px);
+}
+
+.calculator-page-title {
+    background-color: $primary;
+}
+.calc-btn {
+    $px: 8rem;
+    width: fit-content;
+    padding-right: $px;
+    padding-left: $px;
+    cursor: pointer;
+    border: 2px solid $dark-80;
+    transition: 300ms ease;
+
+    &:hover {
+        background: $dark-80;
+        border-color: white;
+        color: white;
+    }
+}
+
+.main-calculator-page {
+    label {
+        font-size: 0.9rem;
+    }
+    .result-container {
+        visibility: hidden;
+        opacity: 0;
+        transition: 400ms ease-in-out;
+
+        .box {
+            transform: translateY(50%);
+            transition: 300ms ease-in-out;
+        }
+        .btn-close {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            z-index: 1111111111;
+            cursor: pointer;
+        }
+
+        .form-item {
+            transition: background 150ms ease;
+            &:hover {
+                background-color: $dark-80;
+            }
+        }
+
+        &.open {
+            visibility: visible;
+            opacity: 1;
+            transition: 300ms ease-in-out;
+            
+            .box {
+                transform: translateY(0);
+                transition: 400ms ease-in-out;
+            }
+            
+        }
+    }
+}
+
+.error-msg {
+    opacity: 0;
+    transition: 350ms ease !important;
+
+    &.show {
+        opacity: 1;
+    }
+}
+input.is-invalid {
+    border: 1.75px solid red !important;
+}
+.date-input {
+    box-shadow: 0 0 0 0rem white !important;
+}
+
+header {
+    .contact-bar {
+        background-color: $dark-80;
+    }
+    nav {
+        .nav-link {
+            &:hover {
+                color: $primary !important;
+            }
+        }
+        .dropdown-menu {
+            .dropdown-item {
+                &:hover {
+                    background-color: $dark-80;
+                }
+            }
+        }
+    }
+}
+
+main {
+    // position: relative;
+    .hero-container {
+        background: url("/assets/imgs/landing-page-bg.png");
+        background-color: rgba(black, 0.95);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        #hero-section {
+            h1 {
+                font-size: 4rem;
+
+                .sub-heading {
+                    font-size: 0.4em;
+                }
+            }
+            .main-text {
+                ul {
+                    width: fit-content;
+                    margin: 0 auto;
+                }
+            }
+
+            button.cta {
+                background: $primary;
+                outline: none;
+                border-color: transparent;
+                transition: 200ms ease;
+
+                &:hover {
+                    border-color: $primary;
+                    background: transparent;
+                    color: $primary !important;
+                }
+            }
+        }
+    }
+
+    #inline-text-section {
+        background: linear-gradient(to top, #ffffff 0%, #b0c3d6 100%);
+    }
+
+    #who-we-are {
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 400px;
+            max-height: 400px;
+            border-radius: 50%;
+        }
+    }
+
+    #services {
+        .card {
+            cursor: pointer;
+            border-color: $primary;
+            border-radius: 15px;
+            .card-img-top {
+                $img-size: 150px;
+                width: $img-size;
+                height: $img-size;
+            }
+            i {
+                transition: opacity 250ms ease;
+            }
+
+            .card-text {
+                height: 0px;
+                overflow: hidden;
+                transition: height 400ms ease-in-out;
+            }
+
+            i {
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }
+    }
+
+    #testimonials {
+        background: linear-gradient(to bottom, #ffffff 0%, #b0c3d6 100%);
+        .carousel-control-next {
+            position: absolute;
+            left: 100%;
+            width: 5%;
+        }
+        .carousel-control-prev {
+            position: absolute;
+            left: 0%;
+            width: 5%;
+        }
+
+        #carouselExampleControls {
+            height: max-content;
+        }
+    }
+} // end main
