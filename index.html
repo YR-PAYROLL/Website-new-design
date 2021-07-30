@@ -20,6 +20,8 @@
     <script src="/assets/js/fix-main.js" defer></script>
     <script src="/assets/js/smooth-scroll.js" defer></script>
     <script src="/assets/js/fix-hero-section.js" defer></script>
+    <script src="/assets/js/fix-who-we-are-section.js" defer></script>
+    <script src="/assets/js/fix-services-section.js" defer></script>
     <script src="/assets/js/service-controller.js" defer></script>
     <script src="/assets/js/testimonials-controller.js" defer></script>
     <!-- Title -->
@@ -35,7 +37,7 @@
                 </a>
             </span>
             <span class="col-2 text-center text-light">
-                <a href="#" class="text-light hover-clr fs-4 text-decoration-none">
+                <a id="contact-header-phone" href="#" class="text-light hover-clr fs-4 text-decoration-none">
                     <span class="desktop-show fs-6 ms-1">074-749-0061</span>
                     <i class="fas fa-phone-alt"></i>
                 </a>
@@ -120,7 +122,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button href="#" class="scroll-btn w-25 mx-auto cta fs-5 fw-bolder text-dark rounded-pill border-2 py-2 px-5 mt-5">
+                    <button href="#" class="scroll-btn mx-auto cta fs-5 fw-bolder text-dark rounded-pill border-2 py-2 px-5 mt-5">
                         דברו
                         איתנו
                     </button>
@@ -151,7 +153,7 @@
             </div>
         </section>
 
-        <section id="who-we-are" class="who-we-are w-100">
+        <section id="who-we-are" class="who-we-are container-fluid">
             <div class="container pt-5 pb-2 px-5 d-flex flex-row-reverse">
                 <img src="/assets/imgs/profile-img.jpg" alt="">
                 <div class="text-container container d-flex flex-column align-content-center justify-content-center">
@@ -235,15 +237,14 @@
             </h1>
 
             <div class="services-box container d-flex gap-4 justify-content-around align-items-start">
-                <div
-                    class="card service border-3 border-top-0 p-4 w-50 align-items-center justify-content-center h-100">
+                <div class="card service border-3 border-top-0 p-4 align-items-center justify-content-center h-100">
                     <img src="assets/imgs/external.svg" class="card-img-top" alt="...">
                     <div class="card-body position-relative">
                         <h5 class="card-title fs-3 text-center mb-3">
                             שירותי שכר חיצוני
                             <i class="fas fa-angle-down d-block mt-4 position-absolute bottom-0"></i>
                         </h5>
-                        <ul class="card-text">
+                        <ul class="card-text container-fluid">
                             <li class="fs-5 mt-2">
                                 שירותי שכר חיצוני במסגרתו הלקוח מקבל מערכת לצפייה בתלושים ובדוחות אונליין.
                             </li>
@@ -272,15 +273,14 @@
                     </div>
                 </div>
 
-                <div
-                    class="card service border-3 border-top-0 p-4 w-50 align-items-center justify-content-center h-100">
+                <div class="card service border-3 border-top-0 p-4 align-items-center justify-content-center h-100">
                     <img src="assets/imgs/watch.svg" class="card-img-top" alt="...">
                     <div class="card-body position-relative">
-                        <h5 class="card-title fs-4 text-center mb-3">
+                        <h5 class="card-title fs-3 text-center mb-3">
                             מערכת נוכחות משולבת
                             <i class="fas fa-angle-down d-block mt-4 position-absolute bottom-0"></i>
                         </h5>
-                        <div class="card-text">
+                        <div class="card-text container-fluid">
                             <p class="p-0 m-0 fs-5">
                                 לצד ניהול השכר ניתנת אפשרות ללקוח לקבל גישה למערכת נוכחות המקושרת ישירות למודול השכר,
                                 וליהנות מנתונים מסונכרנים באופן מיידי.

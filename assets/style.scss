@@ -95,12 +95,11 @@ $primary-hover: rgb(218, 105, 0);
             visibility: visible;
             opacity: 1;
             transition: 300ms ease-in-out;
-            
+
             .box {
                 transform: translateY(0);
                 transition: 400ms ease-in-out;
             }
-            
         }
     }
 }
@@ -123,6 +122,12 @@ input.is-invalid {
 header {
     .contact-bar {
         background-color: $dark-80;
+
+        .desktop-show {
+            @media screen and (max-width: 500px) {
+                display: none;
+            }
+        }
     }
     nav {
         .nav-link {
@@ -148,7 +153,8 @@ main {
         background-blend-mode: multiply;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: cover;
+        background-size: 100% 100%;
+        background-position: center center;
         #hero-section {
             h1 {
                 font-size: 4rem;
@@ -190,32 +196,59 @@ main {
             max-width: 400px;
             max-height: 400px;
             border-radius: 50%;
+
+            @media screen and(max-width: 520px) {
+                max-width: 300px;
+                max-height: 300px;
+            }
+            @media screen and(max-width: 350px) {
+                max-width: 250px;
+                max-height: 250px;
+            }
+            @media screen and(max-width: 300px) {
+                max-width: 220px;
+                max-height: 220px;
+            }
         }
     }
 
     #services {
-        .card {
-            cursor: pointer;
-            border-color: $primary;
-            border-radius: 15px;
-            .card-img-top {
-                $img-size: 150px;
-                width: $img-size;
-                height: $img-size;
-            }
-            i {
-                transition: opacity 250ms ease;
-            }
+        .services-box {
+            .card {
+                cursor: pointer;
+                border-color: $primary;
+                border-radius: 15px;
+                object-fit: cover;
+                margin: 0 !important;
+                // aspect-ratio: 1/.7;
+                @media screen and (min-width: 700px) {
+                    max-width: 50%;
+                }
+                .card-img-top {
+                    $img-size: 150px;
+                    width: $img-size;
+                    height: $img-size;
 
-            .card-text {
-                height: 0px;
-                overflow: hidden;
-                transition: height 400ms ease-in-out;
-            }
+                    @media screen and (max-width: 992px) {
+                        $img-size: 100px;
+                        width: $img-size;
+                        height: $img-size;
+                    }
+                }
+                i {
+                    transition: opacity 250ms ease;
+                }
 
-            i {
-                right: 50%;
-                transform: translateX(50%);
+                .card-text {
+                    height: 0px;
+                    overflow: hidden;
+                    transition: height 400ms ease-in-out;
+                }
+
+                i {
+                    right: 50%;
+                    transform: translateX(50%);
+                }
             }
         }
     }

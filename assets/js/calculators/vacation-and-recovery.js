@@ -125,7 +125,10 @@ function checkIfCalc() {
 }
 
 document.onkeyup = function(e) {
-    if (e.key == 'Escape') {
+    if (e.key === 'Escape') {
         document.querySelector(".result-container").classList.remove("open");
+    }
+	if (e.key == 'Enter' || e.keyCode === 13) {
+        calc();
     }
 }

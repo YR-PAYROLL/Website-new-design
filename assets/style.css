@@ -142,6 +142,12 @@ header .contact-bar {
   background-color: #32383d;
 }
 
+@media screen and (max-width: 500px) {
+  header .contact-bar .desktop-show {
+    display: none;
+  }
+}
+
 header nav .nav-link:hover {
   color: #ff7b00 !important;
 }
@@ -156,7 +162,8 @@ main .hero-container {
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center center;
 }
 
 main .hero-container #hero-section h1 {
@@ -201,30 +208,67 @@ main #who-we-are img {
   border-radius: 50%;
 }
 
-main #services .card {
+@media screen and (max-width: 520px) {
+  main #who-we-are img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main #who-we-are img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  main #who-we-are img {
+    max-width: 220px;
+    max-height: 220px;
+  }
+}
+
+main #services .services-box .card {
   cursor: pointer;
   border-color: #ff7b00;
   border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 !important;
 }
 
-main #services .card .card-img-top {
+@media screen and (min-width: 700px) {
+  main #services .services-box .card {
+    max-width: 50%;
+  }
+}
+
+main #services .services-box .card .card-img-top {
   width: 150px;
   height: 150px;
 }
 
-main #services .card i {
+@media screen and (max-width: 992px) {
+  main #services .services-box .card .card-img-top {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+main #services .services-box .card i {
   -webkit-transition: opacity 250ms ease;
   transition: opacity 250ms ease;
 }
 
-main #services .card .card-text {
+main #services .services-box .card .card-text {
   height: 0px;
   overflow: hidden;
   -webkit-transition: height 400ms ease-in-out;
   transition: height 400ms ease-in-out;
 }
 
-main #services .card i {
+main #services .services-box .card i {
   right: 50%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
