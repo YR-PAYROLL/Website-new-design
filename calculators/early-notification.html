@@ -23,7 +23,7 @@
         crossorigin="anonymous" defer></script>
     <script src="../assets/js/calculators/set-today.js" defer></script>
     <script src="../assets/js/calculators/date-checker.js" defer></script>
-    <script src="../assets/js/calculators/vacation-and-recovery.js" defer></script>
+    <script src="../assets/js/calculators/early-notification.js" defer></script>
 
     <!-- Title -->
     <title>YR-Payroll</title>
@@ -104,7 +104,7 @@
 
     <main class="main-calculator-page container-fluid position-relative p-0 mb-5 pt-3 pb-5">
         <p class="calculator-page-title py-1 px-5 fw-bold text-center fs-5 mb-5">
-            מחשבון חופשה והבראה
+            מחשבון הודעה מוקדמת
         </p>
 
         <div class="calc-container container">
@@ -117,7 +117,7 @@
                 </p>
                 <input id="start-calc"
                     class="date-input border form-control border-dark py-1 px-2 text-center rounded bg-light translate-middle-y"
-                    type="text" placeholder="dd/mm/yyyy">
+                    type="text" placeholder="01/01/2021">
             </div>
             <div class="date-container end-container mb-4 container align-items-start justify-content-around d-grid">
                 <p class="heading fs-5 fw-bold d-inline-block text-center mx-auto my-0">
@@ -128,7 +128,17 @@
                 </p>
                 <input id="end-calc"
                     class="date-input border form-control border-dark py-1 px-2 text-center rounded bg-light translate-middle-y"
-                    type="text" placeholder="dd/mm/yyyy">
+                    type="text" placeholder="01/01/2021">
+            </div>
+            <div class=" worker-type-container m-0 mb-4 container d-grid row align-items-center justify-content-center">
+                <p class="heading fs-5 text-center mx-auto my-0 fw-bold">סוג עובד</p>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group d-flex">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" value="1" checked>
+                    <label class="btn btn-outline-dark shadow-none fs-6 rounded-0 rounded-end" for="btnradio1">חודשי</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" value="2">
+                    <label class="btn btn-outline-dark shadow-none fs-6 rounded-0 rounded-start" for="btnradio2">שעתי / יומי</label>
+                  </div>
             </div>
         </div>
         <div class="container-fluid d-flex align-items-center justify-content-center py-2">
@@ -146,17 +156,12 @@
                 <div class="inner-box">
                     <div class="res five-days-work border-bottom border-secondary m-0 py-2 px-1 form-item">
                         <p class="p-0 m-0 fs-6">
-                            לעובד 5 ימים בשבוע: <span id="five-days-work-res"></span>
+                            ימי הודעה מוקדמת: <span id="notice-days-res"></span>
                         </p>
                     </div>
                     <div class="res six-days-work border-bottom border-secondary m-0 py-2 px-1 form-item">
                         <p class="p-0 m-0 fs-6">
-                            לעובד 6 ימים בשבוע: <span id="six-days-work-res"></span>
-                        </p>
-                    </div>
-                    <div class="res entitlement-recovery m-0 py-2 px-1 form-item">
-                        <p class="bold fs-6 m-0 p-0">
-                            זכאות הבראה שנתית: <span id="entitlement-recovery-res"></span>
+                            תאריך סיום יחסי עבודה: <span id="end-date-of-work-res"></span>
                         </p>
                     </div>
                 </div>

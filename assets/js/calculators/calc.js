@@ -1,17 +1,17 @@
-$( document ).ready(function()  {
+$(document).ready(function () {
 	// TODO: write your page related code here...
-    $('#basis').val(10000)
-    $('#tikralegemel').val($('#basis').val())
-    $('#hishtalmutSelect').val(2)
-    $('#tikralhishtalmut').val(tikraHishtalmutHok)
+	$('#basis').val(10000)
+	$('#tikralegemel').val($('#basis').val())
+	$('#hishtalmutSelect').val(2)
+	$('#tikralhishtalmut').val(tikraHishtalmutHok)
 	$('#nzikoi').val(2.25)
-    $('#ahuzoved').val(6.00)
-    $('#ahuzhishtalmutoved').val(2.5)
+	$('#ahuzoved').val(6.00)
+	$('#ahuzhishtalmutoved').val(2.5)
 	$('#ahuzhishtalmutmaavid').val(7.5)
 	$('#ahuzgemelmaavid').val(6.5)
-    $('#ahuzpizuim').val(8.33)
-    $('#tikralegemel').prop("readonly", true);
-    $('#tikralhishtalmut').prop("readonly", true);
+	$('#ahuzpizuim').val(8.33)
+	$('#tikralegemel').prop("readonly", true);
+	$('#tikralhishtalmut').prop("readonly", true);
 
 });
 
@@ -68,43 +68,43 @@ var tikragemelsachar = 0
 var tikraGemelHok = 10551
 var tikraHishtalmutHok = 15712
 
-var a = 6290
-var b = 9030
-var c = 14490
-var d = 20140
-var e = 41910
-var f = 53970
-var b_a = 6331
-var b_b = 44020
-var mas = 0
-var b_leumi = 0
-var b_brioot = 0
-var b_leumi_maavid
-var nekuda = 218
-var brutolemas = 0
-var gemel = 0
-var gemelmaavid = 0
-var pizuim = 0
-var hishtalmut = 0
-var hishtalmutmaavid = 0
-var ahuzhishtalmut = 0
-var ahuzhishtalmutmaavid = 0
-var ahuzgemelmaavid = 0
-var ahuzpizuim = 0
-var nzikoi = 0
-var basis = 0
-var lolegemel = 0
-var ahuzoved = 0
-var zkifatRecev = 0
-var zkifot = 0
-var seif45 = 0
-var tikralegemel = 0
-var tikralhishtalmut = 0
-var tikraseif45 = 213.15
-var tikragemel = 1926.225
-var tikrahishtalmut = 1178.4
-var tikrapizoim = 2908
-var tikragemelsachar = 0
+var a = 6290
+var b = 9030
+var c = 14490
+var d = 20140
+var e = 41910
+var f = 53970
+var b_a = 6331
+var b_b = 44020
+var mas = 0
+var b_leumi = 0
+var b_brioot = 0
+var b_leumi_maavid
+var nekuda = 218
+var brutolemas = 0
+var gemel = 0
+var gemelmaavid = 0
+var pizuim = 0
+var hishtalmut = 0
+var hishtalmutmaavid = 0
+var ahuzhishtalmut = 0
+var ahuzhishtalmutmaavid = 0
+var ahuzgemelmaavid = 0
+var ahuzpizuim = 0
+var nzikoi = 0
+var basis = 0
+var lolegemel = 0
+var ahuzoved = 0
+var zkifatRecev = 0
+var zkifot = 0
+var seif45 = 0
+var tikralegemel = 0
+var tikralhishtalmut = 0
+var tikraseif45 = 213.15
+var tikragemel = 1926.225
+var tikrahishtalmut = 1178.4
+var tikrapizoim = 2908
+var tikragemelsachar = 0
 
 
 function calc() {
@@ -146,7 +146,7 @@ function calc() {
 		tikralhishtalmut = 0
 	}
 
-	
+
 
 	if (tikralegemel < basis) {
 		gemel = tikralegemel * ahuzoved
@@ -182,18 +182,18 @@ function calc() {
 		nzikoi = 0
 	}
 	brutolemas = basis + lolegemel + zkifot + zkifatRecev
-	tikragemelsachar = Math.min((brutolemas - zkifatRecev) * 0.075, tikragemel) 
-	if (gemelmaavid  > tikragemelsachar) {
+	tikragemelsachar = Math.min((brutolemas - zkifatRecev) * 0.075, tikragemel)
+	if (gemelmaavid > tikragemelsachar) {
 		zkifot = zkifot + gemelmaavid - tikragemelsachar
 		$('#zkifatGemel').text = (gemelmaavid - tikragemelsachar).toFixed(2)
-		
+
 	}
- 
-	
+
+
 	if (hishtalmutmaavid > tikrahishtalmut) {
 		zkifot = zkifot + hishtalmutmaavid - tikrahishtalmut
 	}
-	var tikraPizuimSachar = Math.min(basis * 0.0833, tikrapizoim) 
+	var tikraPizuimSachar = Math.min(basis * 0.0833, tikrapizoim)
 	if (pizuim > tikraPizuimSachar) {
 		zkifot = zkifot + pizuim - tikraPizuimSachar
 		$('#zkifatPizuim').text = tikraPizuimSachar.toFixed(2)
@@ -231,8 +231,8 @@ function calc() {
 		b_leumi_maavid = ((brutolemas - b_a) * mbl_b) + (b_a * mbl_a)
 	} else {
 		b_leumi = ((b_b - b_a) * bl_b) + (b_a * bl_a)
-        b_brioot = ((b_b - b_a) * bb_b) + (b_a * bb_a)
-        b_leumi_maavid = ((b_b - b_a) * mbl_b) + (b_a * mbl_a)
+		b_brioot = ((b_b - b_a) * bb_b) + (b_a * bb_a)
+		b_leumi_maavid = ((b_b - b_a) * mbl_b) + (b_a * mbl_a)
 	}
 
 	if (mas < 0) {
@@ -252,7 +252,7 @@ function calc() {
 	}
 
 	$('#neto').text(neto.toFixed(2))
-	$('#mashacnasa').text( mas.toFixed(2))
+	$('#mashacnasa').text(mas.toFixed(2))
 	$('#bbrioot').text(b_brioot.toFixed(2))
 	$('#bleumioved').text(b_leumi.toFixed(2))
 	$('#gemeloved').text(gemel.toFixed(2))
@@ -288,61 +288,62 @@ function calc() {
 	$('#pizuim').show()
 	$('#hishtalmutmaavid').show()
 	$('#alut').show()
-	
+
 	document.querySelector(".result-container").classList.add("open");
-	
+
 }
-function GemelSelect(){
-    var value = $('#gemelSelect').val()
-if(value == 1){
-    $('#tikralegemel').val($('#basis').val())
-    $('#tikralegemel').prop("readonly", true);
+function GemelSelect() {
+	var value = $('#gemelSelect').val()
+	if (value == 1) {
+		$('#tikralegemel').val($('#basis').val())
+		$('#tikralegemel').prop("readonly", true);
+	}
+	if (value == 2) {
+		$('#tikralegemel').val(tikraGemelHok)
+		$('#tikralegemel').prop("readonly", true);
+	}
+	if (value == 3) {
+		$('#tikralegemel').val(0)
+		$('#tikralegemel').prop("readonly", false);
+	}
 }
-if(value == 2){
-    $('#tikralegemel').val(tikraGemelHok)
-    $('#tikralegemel').prop("readonly", true);
+function HishtalmutSelect() {
+
+	var value = $('#hishtalmutSelect').val()
+	if (value == 1) {
+		$('#tikralhishtalmut').val($('#basis').val())
+		$('#tikralhishtalmut').prop("readonly", true);
+	}
+	if (value == 2) {
+		$('#tikralhishtalmut').val(tikraHishtalmutHok)
+		$('#tikralhishtalmut').prop("readonly", true);
+	}
+	if (value == 3) {
+		$('#tikralhishtalmut').val(0)
+		$('#tikralhishtalmut').prop("readonly", false);
+	}
 }
-if(value == 3){
-    $('#tikralegemel').val(0)
-    $('#tikralegemel').prop("readonly", false);
-}
-}
-function HishtalmutSelect(){
-   
-    var value = $('#hishtalmutSelect').val()
-if(value == 1){
-    $('#tikralhishtalmut').val($('#basis').val())
-    $('#tikralhishtalmut').prop("readonly", true);
-}
-if(value == 2){
-    $('#tikralhishtalmut').val(tikraHishtalmutHok)
-    $('#tikralhishtalmut').prop("readonly", true);
-}
-if(value == 3){
-    $('#tikralhishtalmut').val(0)
-    $('#tikralhishtalmut').prop("readonly", false);
-}
-}
-function NewCalc(){
-    location.reload();
+function NewCalc() {
+	location.reload();
 }
 
 // RESULTS VIEW
 var close_btn = document.querySelector(".btn-close");
 
-close_btn.addEventListener("click", ()=>{
-    document.querySelector(".result-container").classList.remove("open");
+close_btn.addEventListener("click", () => {
+	document.querySelector(".result-container").classList.remove("open");
 })
 
-document.onkeyup = function(e) {
-    if (e.key === 'Escape') {
-        document.querySelector(".result-container").classList.remove("open");
-    }
+document.onkeyup = function (e) {
+	if (e.key === 'Escape') {
+		document.querySelector(".result-container").classList.remove("open");
+	}
 	if (e.key == 'Enter' || e.keyCode === 13) {
-        calc();
-    }
+		calc();
+	}
 }
 
-// setInterval(() => {
-// 	calc();
-// }, 10);
+setInterval(() => {
+	GemelSelect();
+	HishtalmutSelect();
+}, 10);
