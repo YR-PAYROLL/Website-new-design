@@ -97,13 +97,14 @@ $primary-hover: rgb(218, 105, 0);
             transform: translateY(50%);
             transition: 300ms ease-in-out;
         }
-        .btn-close {
-            position: fixed;
-            top: 2rem;
-            right: 2rem;
-            z-index: 1111111111;
-            cursor: pointer;
-        }
+
+        // .btn-close {
+        //     position: fixed;
+        //     top: 2rem;
+        //     right: 2rem;
+        //     z-index: 1111111111;
+        //     cursor: pointer;
+        // }
 
         .form-item {
             transition: background 150ms ease;

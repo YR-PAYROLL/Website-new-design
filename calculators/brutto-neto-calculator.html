@@ -174,64 +174,67 @@
         </div>
 
         <!-- Results -->
-        <div class="result-container d-flex container-fluid w-100 h-100 position-fixed fixed-top zindex-overall calc-result text-light">
-            <div class="border-2 border-white rounded-circle">
-                <div class="close-btn btn-close position-fixed btn-close-white"></div>
-            </div>
-            <div class="box d-flex w-100 align-items-center justify-content-start">
-                <div class="results my-auto container mx-auto row align-items-center justify-content-center">
-                    <div class="form2 col-12 mb-3 mb-md-0 col-md-6">
-                        <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-top border-secondary py-2 px-1">
-                            <p class="my-auto d-inline-block fw-bold">מס הכנסה</p>
-                            <p id="mashacnasa" class="d-inline-block my-auto"></p>
+        <div class="result-container container-fluid w-100 h-100 position-fixed fixed-top zindex-overall calc-result text-light d-flex justify-content-center align-items-center">
+            
+            <div class="container align-items-center justify-content-center">
+                <div class="box row d-flex w-100 align-items-center justify-content-start mb-5">
+                    <div class="results my-auto container mx-auto row align-items-center justify-content-center">
+                        <div class="form2 col-12 mb-3 mb-md-0 col-md-6">
+                            <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-top border-secondary py-2 px-1">
+                                <p class="my-auto d-inline-block fw-bold">מס הכנסה</p>
+                                <p id="mashacnasa" class="d-inline-block my-auto"></p>
+                            </div>
+                            <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
+                                <p class="my-auto d-inline-block fw-bold">ביטוח לאומי</p>
+                                <p id="bleumioved" class="d-inline-block my-auto"></p>
+                            </div>
+                            <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
+                                <p class="my-auto d-inline-block fw-bold my-auto">ביטוח בריאות</p>
+                                <p id="bbrioot" class="d-inline-block my-auto my-auto"></p>
+                            </div>
+                            <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
+                                <p class="my-auto d-inline-block fw-bold">קופת גמל</p>
+                                <p id="gemeloved" class="d-inline-block my-auto"></p>
+                            </div>
+                            <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
+                                <p class="my-auto d-inline-block fw-bold">קרן השתלמות</p>
+                                <p id="hishtalmutoved" class="d-inline-block my-auto"></p>
+                            </div>
+                            <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
+                                <p class="my-auto fw-bold d-inline-block">נטו</p>
+                                <p class="d-inline-block text-success fw-bold my-auto" id="neto"></p>
+                            </div>
                         </div>
-                        <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
-                            <p class="my-auto d-inline-block fw-bold">ביטוח לאומי</p>
-                            <p id="bleumioved" class="d-inline-block my-auto"></p>
-                        </div>
-                        <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
-                            <p class="my-auto d-inline-block fw-bold my-auto">ביטוח בריאות</p>
-                            <p id="bbrioot" class="d-inline-block my-auto my-auto"></p>
-                        </div>
-                        <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
-                            <p class="my-auto d-inline-block fw-bold">קופת גמל</p>
-                            <p id="gemeloved" class="d-inline-block my-auto"></p>
-                        </div>
-                        <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
-                            <p class="my-auto d-inline-block fw-bold">קרן השתלמות</p>
-                            <p id="hishtalmutoved" class="d-inline-block my-auto"></p>
-                        </div>
-                        <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
-                            <p class="my-auto fw-bold d-inline-block">נטו</p>
-                            <p class="d-inline-block text-success fw-bold my-auto" id="neto"></p>
+                        <div class="form2 col">
+                            <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-top border-secondary py-2 px-1">
+                                <p class="my-auto d-inline-block fw-bold">תשלומים לעובד</p>
+                                <p id="tashlumim" class="my-auto d-inline-block"></p>
+                            </div>
+                            <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
+                                <p class="my-auto d-inline-block fw-bold">ביטוח לאומי מעביד</p>
+                                <p class="my-auto d-inline-block" id="bleumimaavid"></p>
+                            </div>
+                            <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
+                                <p class="my-auto d-inline-block fw-bold">תגמולי מעביד</p>
+                                <p class="my-auto d-inline-block" id="gemelmaavid"></p>
+                            </div>
+                            <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
+                                <p class="my-auto d-inline-block fw-bold">פיצויים</p>
+                                <p class="my-auto d-inline-block" id="pizuim"></p>
+                            </div>
+                            <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
+                                <p class="my-auto d-inline-block fw-bold">השתלמות מעביד</p>
+                                <p class="my-auto d-inline-block" id="hishtalmutmaavid"></p>
+                            </div>
+                            <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
+                                <p class="my-auto d-inline-block fw-bold">סה"כ עלות</p>
+                                <p class="text-primary fw-bold my-auto d-inline-block" id="alut"></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="form2 col">
-                        <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-top border-secondary py-2 px-1">
-                            <p class="my-auto d-inline-block fw-bold">תשלומים לעובד</p>
-                            <p id="tashlumim" class="my-auto d-inline-block"></p>
-                        </div>
-                        <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
-                            <p class="my-auto d-inline-block fw-bold">ביטוח לאומי מעביד</p>
-                            <p class="my-auto d-inline-block" id="bleumimaavid"></p>
-                        </div>
-                        <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
-                            <p class="my-auto d-inline-block fw-bold">תגמולי מעביד</p>
-                            <p class="my-auto d-inline-block" id="gemelmaavid"></p>
-                        </div>
-                        <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
-                            <p class="my-auto d-inline-block fw-bold">פיצויים</p>
-                            <p class="my-auto d-inline-block" id="pizuim"></p>
-                        </div>
-                        <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
-                            <p class="my-auto d-inline-block fw-bold">השתלמות מעביד</p>
-                            <p class="my-auto d-inline-block" id="hishtalmutmaavid"></p>
-                        </div>
-                        <div class="res ta-r form-item d-flex justify-content-between align-items-center border-bottom border-secondary py-2 px-1">
-                            <p class="my-auto d-inline-block fw-bold">סה"כ עלות</p>
-                            <p class="text-primary fw-bold my-auto d-inline-block" id="alut"></p>
-                        </div>
-                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center mt-5">
+                    <button class="btn-close text-center close-btn btn-close-white" aria-label="Close"></button>
                 </div>
 
             </div>

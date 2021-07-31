@@ -113,14 +113,6 @@
   transition: 300ms ease-in-out;
 }
 
-.main-calculator-page .result-container .btn-close {
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  z-index: 1111111111;
-  cursor: pointer;
-}
-
 .main-calculator-page .result-container .form-item {
   -webkit-transition: background 150ms ease;
   transition: background 150ms ease;

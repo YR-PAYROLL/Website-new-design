@@ -137,26 +137,29 @@
 
 
         <!-- Results -->
-        <div
-            class="result-container container-fluid w-100 h-100 position-fixed fixed-top zindex-overall calc-result text-light">
-            <div class="close-btn btn-close position-fixed btn-close-white"></div>
-            <div class="box h-100 w-100 align-items-center justify-content-center d-flex">
-                <div class="inner-box">
-                    <div class="res five-days-work border-bottom border-secondary m-0 py-2 px-1 form-item">
-                        <p class="p-0 m-0 fs-6">
-                            לעובד 5 ימים בשבוע: <span id="five-days-work-res"></span>
-                        </p>
+        <div class="result-container container-fluid w-100 h-100 position-fixed fixed-top zindex-overall calc-result text-light d-flex justify-content-center align-items-center">
+            <div class="container d-grid align-items-center justify-content-center">
+                <div class="box h-100 w-100 align-items-center justify-content-center d-flex">
+                    <div class="inner-box">
+                        <div class="res five-days-work border-bottom border-secondary m-0 py-2 px-1 form-item">
+                            <p class="p-0 m-0 fs-6">
+                                לעובד 5 ימים בשבוע: <span id="five-days-work-res"></span>
+                            </p>
+                        </div>
+                        <div class="res six-days-work border-bottom border-secondary m-0 py-2 px-1 form-item">
+                            <p class="p-0 m-0 fs-6">
+                                לעובד 6 ימים בשבוע: <span id="six-days-work-res"></span>
+                            </p>
+                        </div>
+                        <div class="res entitlement-recovery m-0 py-2 px-1 form-item">
+                            <p class="bold fs-6 m-0 p-0">
+                                זכאות הבראה שנתית: <span id="entitlement-recovery-res"></span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="res six-days-work border-bottom border-secondary m-0 py-2 px-1 form-item">
-                        <p class="p-0 m-0 fs-6">
-                            לעובד 6 ימים בשבוע: <span id="six-days-work-res"></span>
-                        </p>
-                    </div>
-                    <div class="res entitlement-recovery m-0 py-2 px-1 form-item">
-                        <p class="bold fs-6 m-0 p-0">
-                            זכאות הבראה שנתית: <span id="entitlement-recovery-res"></span>
-                        </p>
-                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center mt-5">
+                    <button class="btn-close text-center close-btn btn-close-white" aria-label="Close"></button>
                 </div>
             </div>
         </div>
