@@ -67,11 +67,15 @@ function finalCalc() {
     for ( var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             worker_type = radios[i].value;
+            console.log(`worker type value = ${worker_type}`)
             break;
         }
     }
 
     yyyy_delta = parseInt(end_yyyy) - parseInt(start_yyyy);
+    if (yyyy_delta == 0) {
+        yyyy_delta = 1;
+    }
     mm_delta = parseInt(end_mm) - parseInt(start_mm);
     senior_in_months = (yyyy_delta * 12) + mm_delta;
     if (parseInt(end_dd) > parseInt(start_dd)) {
@@ -81,6 +85,8 @@ function finalCalc() {
     if (senior_in_months > 25){
         senior_in_months = '>25';
     }
+
+    console.log(`senior in months: ${senior_in_months}, workerType: ${worker_type}`)
     document.querySelector('#notice-days-res').innerText = res_dict[senior_in_months][parseInt(worker_type)-1];
 
     var end_date_of_work = new Date(parseInt(end_yyyy), parseInt(end_mm), parseInt(end_dd));
