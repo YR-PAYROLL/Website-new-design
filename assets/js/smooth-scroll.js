@@ -1,14 +1,10 @@
 function smoothScroll(target, duration) {
     console.log("smooth link clicks")
     var target = document.querySelector(target);
-    var targetPosition = target.offsetTop - (document.querySelector('header').offsetHeight * 1);
+    var targetPosition = target.offsetTop
     var startPosition = window.scrollY;
     var res = 0;
-    // if (target.getAttribute('id') == 'my-work') {
-    //     var deg = 30 / 100;
-    //     var targetHeight = target.offsetHeight;
-    //     res = targetHeight * deg;
-    // }
+
     var distance = targetPosition - startPosition - res;
     var start_time = null;
 

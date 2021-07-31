@@ -47,7 +47,7 @@
         <nav class="ltr navbar navbar-expand-lg navbar-dark bg-dark w-100 m-0 text-center">
             <div class="ltr container align-content-center">
                 <a class="navbar-brand align-content-center justify-content-center d-flex" href="/">
-                    <span class="align-self-center ms-2 fs-6">חשבות שכר <span class="d-block">במיקור חוץ</span></span>
+                    <span class="align-self-center ms-2 fs-6">י.ר שכר</span>
                     <img src="../assets/imgs/YR-logo.svg" alt="" width="75" height="50"
                         class="d-inline-block align-text-top">
                 </a>
@@ -87,7 +87,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">צרו קשר</a>
+                            <a class="nav-link active" href="/#contact-us">צרו קשר</a>
                         </li>
                     </ul>
                 </div>
@@ -100,7 +100,7 @@
             מחשבון ברוטו-נטו | עלות מעביד (מעודכן לשנת 2021)
         </p>
 
-        <div class="forms-container row container-fluid mt-5 pt-5 px-5 align-items-start justify-content-center gap-3 text-center">
+        <div class="forms-container d-flex row container-fluid m-0 mt-5 pt-5 px-1 px-sm-2 px-md-5 align-items-start justify-content-center gap-3 text-center">
             <div class="form col">
                 <div class="form-item mb-2 d-flex align-items-center justify-content-between border-bottom pb-2">
                     <label class="fw-bold">שכר בסיס</label>
@@ -125,14 +125,14 @@
                 </div>
             </div>
             <div class="form col">
-                <div class="form-item mb-2 d-flex align-items-center justify-content-between border-bottom pb-2">
-                    <label class="fw-bold text-end" style="width: 96px;">קופת גמל</label>
-                    <select oninput="GemelSelect()" id="gemelSelect">
+                <div class="form-item mb-2 row align-items-center justify-content-between border-bottom pb-2">
+                    <label class="fw-bold text-end col-6 col-sm-4" style="width: 96px;">קופת גמל</label>
+                    <select oninput="GemelSelect()" class="col-6 col-sm-4" id="gemelSelect">
                         <option value="1">לפי שכר בסיס</option>
                         <option value="2">עד התקרה בחוק</option>
                         <option value="3">מגבלת סכום</option>
                     </select>
-                    <input id="tikralegemel disable" type="text" readonly>
+                    <input id="tikralegemel disable" class="col-12 col-sm-4 mt-2 mt-sm-0 text-center text-sm-end" type="text" readonly>
                 </div>
                 <div class="form-item mb-2 d-flex align-items-center justify-content-between border-bottom pb-2">
                     <label class="fw-bold text-end">אחוז עובד</label>
@@ -149,14 +149,14 @@
                 </div>
             </div>
             <div class="form col">
-                <div class="form-item mb-2 d-flex align-items-center justify-content-between border-bottom pb-2">
-                    <label class="text-end fw-bold" style="width: 96px;">קרן השתלמות</label>
-                    <select oninput="HishtalmutSelect()" id="hishtalmutSelect">
+                <div class="form-item mb-2 row align-items-center justify-content-between border-bottom pb-2">
+                    <label class="text-end fw-bold col-6 col-sm-4" style="width: 96px;">קרן השתלמות</label>
+                    <select oninput="HishtalmutSelect()" class="col-6 col-sm-4" id="hishtalmutSelect">
                         <option value="1">לפי שכר בסיס</option>
                         <option value="2">עד תקרה פטורה</option>
                         <option value="3">מגבלת סכום</option>
                     </select>
-                    <input id="tikralhishtalmut" type="text" readonly>
+                    <input id="tikralhishtalmut" class="col-12 col-sm-4 text-center text-sm-end" type="text" readonly>
                 </div>
                 <div class="form-item mb-2 d-flex align-items-center justify-content-between border-bottom pb-2">
                     <label class="text-end fw-bold">אחוז עובד</label>
@@ -169,7 +169,10 @@
             </div>
 
         </div>
-        <p onclick="calc()" class="calc-btn mx-auto text-center mt-5 py-2 rounded-pill fw-bold fs-6">חישוב</p>
+        <div class="container-fluid d-flex align-items-center justify-content-center py-2">
+            <button type="button" onclick="calc()" class="btn btn-outline-dark my-5 rounded-pill col-12 col-sm-8 col-md-6 col-lg-4 fs-6">חישוב</button>
+        </div>
+        <!-- <p onclick="calc()" class="calc-btn mx-auto text-center  py-2 rounded-pill fw-bold fs-6">חישוב</p> -->
 
         <!-- Results -->
         <div class="result-container container-fluid w-100 h-100 position-fixed fixed-top zindex-overall calc-result text-light">

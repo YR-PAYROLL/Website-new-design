@@ -6,17 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Links -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
-        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
     <script src="/assets/js/fix-main.js" defer></script>
     <script src="/assets/js/smooth-scroll.js" defer></script>
     <script src="/assets/js/fix-hero-section.js" defer></script>
@@ -51,7 +45,7 @@
         <nav class="ltr navbar navbar-expand-lg navbar-dark bg-dark w-100 m-0 text-center">
             <div class="ltr container align-content-center">
                 <a class="navbar-brand align-content-center justify-content-center d-flex" href="/">
-                    <span class="align-self-center ms-2 fs-6">חשבות שכר <span class="d-block">במיקור חוץ</span></span>
+                    <span class="align-self-center ms-2 fs-6">י.ר שכר</span>
                     <img src="assets/imgs/YR-logo.svg" alt="" width="75" height="50"
                         class="d-inline-block align-text-top">
                 </a>
@@ -83,15 +77,17 @@
                                 מחשבוני שכר
                             </a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item text-light text-end" href="/calculators/brutto-neto-calculator.html">מחשבון ברוטו-נטו | עלות
+                                <li><a class="dropdown-item text-light text-end"
+                                        href="/calculators/brutto-neto-calculator.html">מחשבון ברוטו-נטו | עלות
                                         מעביד</a></li>
-                                <li><a class="dropdown-item text-light text-end" href="/calculators/vacation-and-recovery.html">מחשבון חופשה / מחשבון
+                                <li><a class="dropdown-item text-light text-end"
+                                        href="/calculators/vacation-and-recovery.html">מחשבון חופשה / מחשבון
                                         הבראה</a></li>
                                 <li><a class="dropdown-item text-light text-end" href="#">מחשבון הודעה מוקדמת</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="scroll-btn nav-link active" href="#">צרו קשר</a>
+                            <a class="scroll-btn nav-link active" href="#contact-us">צרו קשר</a>
                         </li>
                     </ul>
                 </div>
@@ -111,18 +107,20 @@
                     </h1>
                     <div class="main-text text-center align-items-center justify-content-center mb-5">
                         <ul class="text-end fs-6">
-                            <li>
-                                חשבות שכר בתוכנת בניה ויישום הסכמי נוכחות
+                            <li class="text-center list-unstyled fs-5">
+                                חשבות שכר בתוכנת פריוריטי
                             </li>
-                            <li>
+                            <li class="text-center list-unstyled fs-5">
+                                בנייה ויישום הסכמי נוכחות
+                            </li>
+                            <li class="text-center list-unstyled fs-5">
                                 ליווי אישי ומקצועי לאורך כל הדרך
                             </li>
-                            <li>
-                                גישה ישירה לנתוני השכר והנוכחות אונליין מכל מקום ובכל רגע נתון!
-                            </li>
                         </ul>
+                        <p class="mt-5 fs-4 fw-bold">גישה ישירה לנתוני השכר והנוכחות אונליין מכל מקום ובכל רגע נתון!</p>
                     </div>
-                    <button href="#" class="scroll-btn mx-auto cta fs-5 fw-bolder text-dark rounded-pill border-2 py-2 px-5 mt-5">
+                    <button href="#contact-us"
+                        class="scroll-btn mx-auto cta fs-5 fw-bolder text-dark rounded-pill border-2 py-2 px-5 mt-5">
                         דברו
                         איתנו
                     </button>
@@ -135,7 +133,7 @@
             <div class="heading mb-3">
                 <h1 class="color fs-2">
                     השקט שלך זו המומחיות שלנו!
-                    <span class="d-block fs-1 text-dark">
+                    <span class="d-block fs-1 text-dark fw-bold">
                         נעים להכיר!
                     </span>
                 </h1>
@@ -152,10 +150,10 @@
                 </p>
             </div>
         </section>
-
+        <div class="container break bg-secondary bg-gradient mb-5 mt-5 rounded-pill"></div>
         <section id="who-we-are" class="who-we-are container-fluid">
             <div class="container pt-5 pb-2 px-5 d-flex flex-row-reverse">
-                <img src="/assets/imgs/profile-img.jpg" alt="">
+                <img src="/assets/imgs/profile-img.jpg" alt="" class="mb-5 mb-lg-0">
                 <div class="text-container container d-flex flex-column align-content-center justify-content-center">
                     <h1 class="heading color fs-1 mb-3">
                         יהודה רייזנר
@@ -189,9 +187,9 @@
 
         <section id="why-us"
             class="why-us w-100 pt-2 pb-2 container-fluid align-items-center justify-content-center d-grid text-center">
-            <h1 class="heading fs-1 mb-3">
+            <h1 class="heading fs-1 mb-3 fw-bold">
                 <span class="color">למה דווקא</span> י.ר שכר
-                <span class="color d-block fs-2">שירותי חשבות שכר במיקור חוץ?</span>
+                <span class="color d-block fs-2 fw-normal">שירותי חשבות שכר במיקור חוץ?</span>
             </h1>
             <div class="main-text">
                 <p class="p-0 m-0 fs-5">
@@ -232,7 +230,7 @@
         <div class="container break bg-secondary bg-gradient mb-5 mt-5 rounded-pill"></div>
 
         <section id="services" class="services container-fluid pt-2 pb-5">
-            <h1 class="heading fs-1 mb-5 color text-center">
+            <h1 class="heading fs-1 mb-5 color text-center fw-bold">
                 אז מה אנחנו מציעים?
             </h1>
 
@@ -280,7 +278,7 @@
                             מערכת נוכחות משולבת
                             <i class="fas fa-angle-down d-block mt-4 position-absolute bottom-0"></i>
                         </h5>
-                        <div class="card-text container-fluid">
+                        <div class="card-text container-fluid px-1 px-sm-5">
                             <p class="p-0 m-0 fs-5">
                                 לצד ניהול השכר ניתנת אפשרות ללקוח לקבל גישה למערכת נוכחות המקושרת ישירות למודול השכר,
                                 וליהנות מנתונים מסונכרנים באופן מיידי.
@@ -307,133 +305,168 @@
             </div>
         </section>
 
-        <section id="testimonials" class="testimonials container-fluid justify-content-center py-5">
-            <h1 class="heading fs-1 mb-5 color text-center">
-                הנה מה שמספרים עלינו . . .
-            </h1>
-
-            <div id="carouselExampleControls"
-                class="carousel h-100 slide col-8 mx-auto justify-content-center position-relative rounded-3 overflow-auto"
-                data-bs-ride="carousel">
-                <div class="carousel-inner bg-white rounded-3">
-                    <div class="carousel-item h-100 active">
-                        <div class="card py-2 px-5 rounded-3 border-2">
-                            <div class="card-body">
-                                <h5 class="card-title fs-3 mb-5">
-                                    מקצועי כמוך עוד לא יצא לי לפגוש.
-                                </h5>
-                                <p class="card-text fs-5 mb-5">
-                                    כבר יצא לי לעבוד מול לשכות שכר בעבר, אבל כמוך עוד לא יצא לי לפגוש. תודה על שירות
-                                    מקצועי
-                                    ומהיר ועל התמיכה בכל נושא. אתה נכס לכל חברה שתזכה לקבל ממך שירות.
-                                </p>
-                                <div class="card-profile float-start fs-6 lh-1 fw-bold">
-                                    מירב מור
-                                    <span class="d-block">קיומרקטס</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card py-2 px-5 rounded-3 border-2  h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fs-3 mb-5">
-                                    זה לא רק המקצועיות שלך זה גם מי שאתה.
-                                </h5>
-                                <p class="card-text fs-5 mb-5">
-                                    תענוג לעבוד אתך, אתה בן אדם מקצועי ונעים, וסוף סוף נושא השכר מסודר אצלנו.
-                                </p>
-                                <div class="card-profile float-start fs-6 lh-1 fw-bold">
-                                    סוזן פרבר
-                                    <span class="d-block">
-                                        וורלד קונסיל
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card py-2 px-5 rounded-3 border-2  h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fs-3 mb-5">
-                                    אתה הבחירה הכי טובה, עשית לנו סדר בכל נושא השכר.
-                                </h5>
-                                <p class="card-text fs-5 mb-5">
-                                    אל לשכת השכר של יהודה הגעתי דרך המלצה, אני שמח מאוד על הבחירה שעשיתי, אני מקבל יחס
-                                    אישי
-                                    וטיפול מסור בכל עניין, יהודה מקצועי מאוד, תמיד זמין ויודע לתת מענה לכל שאלה. בזכותו
-                                    נושא
-                                    השכר מטופל בצורה מופתית.
-                                </p>
-                                <div class="card-profile float-start fs-6 lh-1 fw-bold">
-                                    גלעד רוזנצוויג
-                                    <span class="d-block">
-                                        גלמר קדם
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card py-2 px-5 rounded-3 border-2  h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fs-3 mb-5">
-                                    נתת לי את הביטחון שכל נושא השכר מאורגן, יעיל ומדויק ביותר.
-                                </h5>
-                                <p class="card-text fs-5 mb-5">
-                                    אתה מצוין במה שאתה עושה, מקצועי ומבין עניין, ביצעת את המעבר לתוכנה אחרת בצורה
-                                    מושלמת. כל
-                                    הסבת הנתונים נעשתה במקצועיות וללא פשרות. אני מרוצה מאוד וממליץ לכל מי שרוצה ראש שקט
-                                    בנושא
-                                    שכר עובדים עם שירות ברמה הגבוהה ביותר.
-                                </p>
-                                <div class="card-profile float-start fs-6 lh-1 fw-bold">
-                                    אלי חורי
-                                    <span class="d-block">
-                                        אס.טי.אקס.איי
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card py-2 px-5 rounded-3 border-2  h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fs-3 mb-5">
-                                    אתה איש מקצוע מהשורה הראשונה.
-                                </h5>
-                                <p class="card-text fs-5 mb-5">
-                                    תענוג לדעת שיש איש מקצוע שהוא חלק מהעסק ונותן מענה לא רק לשכר העובדים, אלא מהווה גם
-                                    כתובת
-                                    לכל שאלה בנושא דיני עבודה.
-                                    <span class="d-block">אנחנו נהנים ממך, משירות מכל הלב, יסודי ותמיד באדיבות
-                                        ובחיוך.</span>
-                                </p>
-                                <div class="card-profile float-start fs-6 lh-1 fw-bold">
-                                    יסכה אלבז
-                                    <span class="d-block">
-                                        סופר פרטס
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section id="testimonials" class="testimonials">
+            <h2 class="testimonials__header heading color fw-bold">הנה מה שמספרים עלינו...</h2>
+            <div class="quote-mark">
+                <img src="/assets/imgs/quote-mark.svg" alt="">
+            </div>
+            <div class="testimonials__view">
+                <div class="testimonials__view__btns">
+                    <i onclick="moveRight()" class="fas fa-chevron-right right"></i>
+                    <i onclick="moveLeft()" class="fas fa-chevron-left left"></i>
                 </div>
-                <button class="carousel-control-prev carousel-nav-btn bg-dark" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon h-100" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next carousel-nav-btn bg-dark" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon h-100" aria-hidden="true"></span>
-                </button>
+                <div class="testimonials-wrapper">
+
+                    <div class="testimonial active">
+                        <p class="testimonial__header">
+                            מקצועי כמוך עוד לא יצא לי לפגוש.
+                        </p>
+                        <p class="testimonial__content">
+                            כבר יצא לי לעבוד מול לשכות שכר בעבר, אבל כמוך עוד לא יצא לי לפגוש. תודה על שירות מקצועי
+                            ומהיר ועל התמיכה בכל נושא. אתה נכס לכל חברה שתזכה לקבל ממך שירות.
+                        </p>
+
+                        <div class="testimonial__profile">
+                            <p class="testimonial__profile__name">מירב מור</p>
+                            <p class="testimonial__profile__desc">קיומארקטס</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <p class="testimonial__header">
+                            זה לא רק המקצועיות שלך זה גם מי שאתה.
+                        </p>
+                        <p class="testimonial__content">
+                            תענוג לעבוד אתך, אתה בן אדם מקצועי ונעים, וסוף סוף נושא השכר מסודר אצלנו.
+                        </p>
+
+                        <div class="testimonial__profile">
+                            <p class="testimonial__profile__name">
+                                סוזן פרבר
+                            </p>
+                            <p class="testimonial__profile__desc">
+                                וורלד קונסיל
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <p class="testimonial__header">
+                            אתה הבחירה הכי טובה, עשית לנו סדר בכל נושא השכר.
+                        </p>
+                        <p class="testimonial__content">
+                            אל לשכת השכר של יהודה הגעתי דרך המלצה, אני שמח מאוד על הבחירה שעשיתי, אני מקבל יחס אישי
+                            וטיפול מסור בכל עניין, יהודה מקצועי מאוד, תמיד זמין ויודע לתת מענה לכל שאלה. בזכותו נושא
+                            השכר מטופל בצורה מופתית.
+                        </p>
+
+                        <div class="testimonial__profile">
+                            <p class="testimonial__profile__name">
+                                גלעד רוזנצוויג
+                            </p>
+                            <p class="testimonial__profile__desc">
+                                גלמר קדם
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <p class="testimonial__header">
+                            נתת לי את הביטחון שכל נושא השכר מאורגן, יעיל ומדויק ביותר.
+                        </p>
+                        <p class="testimonial__content">
+                            אתה מצוין במה שאתה עושה, מקצועי ומבין עניין, ביצעת את המעבר לתוכנה אחרת בצורה מושלמת. כל
+                            הסבת הנתונים נעשתה במקצועיות וללא פשרות. אני מרוצה מאוד וממליץ לכל מי שרוצה ראש שקט בנושא
+                            שכר עובדים עם שירות ברמה הגבוהה ביותר.
+                        </p>
+
+                        <div class="testimonial__profile">
+                            <p class="testimonial__profile__name">
+                                אלי חורי
+                            </p>
+                            <p class="testimonial__profile__desc">
+                                אס.טי.אקס.איי
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <p class="testimonial__header">
+                            אתה איש מקצוע מהשורה הראשונה.
+                        </p>
+                        <p class="testimonial__content">
+                            תענוג לדעת שיש איש מקצוע שהוא חלק מהעסק ונותן מענה לא רק לשכר העובדים, אלא מהווה גם כתובת
+                            לכל שאלה בנושא דיני עבודה.
+                            <span class="block">אנחנו נהנים ממך, משירות מכל הלב, יסודי ותמיד באדיבות ובחיוך.</span>
+                        </p>
+
+                        <div class="testimonial__profile">
+                            <p class="testimonial__profile__name">
+                                יסכה אלבז
+                            </p>
+                            <p class="testimonial__profile__desc">
+                                סופר פרטס
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us" class="contact-ts-section container-fluid py-5 px-2">
+            <h1 class="heading fs-1 mb-5 color text-center fw-bold">
+                לכל שאלה, מידע נוסף או תיאום פגישת היכרות
+                <span class="d-block fs-5 text-white fw-normal">מוזמנים ליצור קשר</span>
+            </h1>
+            <div class="contact-box container rounded p-3 p-md-5 mb-5">
+                <div class="contact-bar w-100 d-flex align-content-center justify-content-center rounded mb-5">
+                    <span class="col-2 text-center text-light col-md-3">
+                        <a class="text-light hover-clr fs-4" href="#">
+                            <i class="fab fa-whatsapp color clr-hover"></i>
+                        </a>
+                    </span>
+                    <span class="col-2 text-center text-light col-md-3">
+                        <a id="contact-header-phone" href="#" class="text-light clr-hover fs-4 text-decoration-none">
+                            <span class="desktop-show fs-6 ms-1 color">074-749-0061</span>
+                            <i class="fas fa-phone-alt color"></i>
+                        </a>
+                    </span>
+                    <span class="col-2 text-center text-light col-md-3">
+                        <a href="#" class="text-light hover-clr fs-4">
+                            <i class="fas fa-envelope color clr-hover"></i>
+                        </a>
+                    </span>
+                </div>
+
+                <div class="contact-form">
+                    <form action="/" method="POST" netlify>
+                        <div class="form-floating mb-3 text-end">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="שם מלא" required>
+                            <label for="floatingPassword" class="end-0 t-origin-end">שם מלא</label>
+                        </div>
+                        <div class="form-floating mb-3 text-end">
+                            <input type="tel" class="form-control" id="floatingPassword" placeholder="טלפון" required>
+                            <label for="floatingPassword" class="end-0 t-origin-end">טלפון</label>
+                        </div>
+                        <div class="form-floating mb-5">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                            <label for="floatingInput" class="end-0 t-origin-end">דואר אלקטרוני</label>
+                        </div>
+
+                        <div class="row container-fluid m-0 p-0 d-flex align-items-center justify-content-center">
+                            <input type="button"
+                                class="col-12 col-sm-8 col-md-6 col-lg-4 align-self-center btn bg-primary clr-hover bg-clr-hover fw-bold fs-5"
+                                value="לתיאום שיחה">
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
 
         <footer class="container-fluid credit bg-dark py-1 px-5 fs-6 text-center text-light position-absolute bottom-0">
-            האתר נבנה ועוצב על ידי <a href="https://tal-mekler.com" class="color clr-hover text-decoration-none">טל מקלר
+            האתר נבנה ועוצב על ידי <a href="https://tal-mekler.com"
+                class="color clr-hover text-decoration-none d-block d-sm-inline-block">טל מקלר
                 - Tal Mekler Developer</a>
         </footer>
     </main>
