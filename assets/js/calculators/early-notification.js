@@ -92,7 +92,7 @@ function finalCalc() {
     var end_date_of_work = new Date(parseInt(end_yyyy), parseInt(end_mm), parseInt(end_dd));
     end_date_of_work.setDate(end_date_of_work.getDate() + res_dict[senior_in_months][parseInt(worker_type)-1]);
     var end_dd = end_date_of_work.getDate();
-    var end_mm = parseInt(end_date_of_work.getMonth()) + 1;
+    var end_mm = parseInt(end_date_of_work.getMonth());
     var end_yyyy = end_date_of_work.getFullYear();
 
     if (parseInt(end_dd) < 10){
