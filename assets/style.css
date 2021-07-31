@@ -187,8 +187,13 @@ main .hero-container {
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center center;
+}
+
+main .hero-container #hero-section {
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
 }
 
 main .hero-container #hero-section h1 {
