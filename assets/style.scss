@@ -92,7 +92,9 @@ $primary-hover: rgb(218, 105, 0);
         visibility: hidden;
         opacity: 0;
         transition: 400ms ease-in-out;
-        box-sizing: content-box !important;
+        *{
+            box-sizing: content-box !important;
+        }
 
         .box {
             transform: translateY(50%);

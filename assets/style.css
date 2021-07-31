@@ -104,6 +104,9 @@
   opacity: 0;
   -webkit-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out;
+}
+
+.main-calculator-page .result-container * {
   -webkit-box-sizing: content-box !important;
           box-sizing: content-box !important;
 }
