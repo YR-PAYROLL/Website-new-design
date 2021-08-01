@@ -342,8 +342,3 @@ document.onkeyup = function (e) {
 		calc();
 	}
 }
-
-setInterval(() => {
-	GemelSelect();
-	HishtalmutSelect();
-}, 10);
