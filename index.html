@@ -6,18 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Links -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
     <script src="/assets/js/fix-main.js" defer></script>
-    <script src="/assets/js/smooth-scroll.js" defer></script>
     <script src="/assets/js/fix-hero-section.js" defer></script>
     <script src="/assets/js/fix-who-we-are-section.js" defer></script>
     <script src="/assets/js/fix-services-section.js" defer></script>
     <script src="/assets/js/service-controller.js" defer></script>
     <script src="/assets/js/testimonials-controller.js" defer></script>
+    <!-- Jquery --> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" defer></script>
+    <script src="/assets/js/smooth-scroll.js" defer></script>
+    
     <!-- Title -->
     <title>YR-Payroll</title>
 </head>
@@ -31,7 +40,8 @@
                 </a>
             </span>
             <span class="col-2 text-center text-light">
-                <a id="contact-header-phone" href="tel:0747490061" class="text-light hover-clr fs-4 text-decoration-none">
+                <a id="contact-header-phone" href="tel:0747490061"
+                    class="text-light hover-clr fs-4 text-decoration-none">
                     <span class="desktop-show fs-6 ms-1">074-749-0061</span>
                     <i class="fas fa-phone-alt"></i>
                 </a>
@@ -44,7 +54,8 @@
         </div>
         <nav class="ltr navbar navbar-expand-lg navbar-dark bg-dark w-100 m-0 text-center">
             <div class="ltr container align-content-center">
-                <a class="navbar-brand align-content-center justify-content-center d-flex" href="/">
+                <a class="scroll-btn navbar-brand align-content-center justify-content-center d-flex"
+                    href="#hero-section">
                     <span class="align-self-center ms-2 fs-6">י.ר שכר</span>
                     <img src="assets/imgs/YR-logo.svg" alt="" width="75" height="50"
                         class="d-inline-block align-text-top">
@@ -57,19 +68,19 @@
                 <div class="justify-content-start collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="text-center navbar-nav">
                         <li class="nav-item">
-                            <a class="scroll-btn nav-link active" aria-current="page" href="#hero-section">בית</a>
+                            <a class="scroll-btn nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" aria-current="page" href="#hero-section">בית</a>
                         </li>
                         <li class="nav-item">
-                            <a class="scroll-btn nav-link active" href="#who-we-are">מי אנחנו?</a>
+                            <a class="scroll-btn nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#who-we-are">מי אנחנו?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="scroll-btn nav-link active" href="#why-us">למה אנחנו?</a>
+                            <a class="scroll-btn nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#why-us">למה אנחנו?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="scroll-btn nav-link active" href="#services">השירותים שלנו</a>
+                            <a class="scroll-btn nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#services">השירותים שלנו</a>
                         </li>
                         <li class="nav-item">
-                            <a class="scroll-btn nav-link active" href="#testimonials">המלצות</a>
+                            <a class="scroll-btn nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#testimonials">המלצות</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
@@ -83,11 +94,12 @@
                                 <li><a class="dropdown-item text-light text-center text-lg-end"
                                         href="/calculators/vacation-and-recovery.html">מחשבון חופשה / מחשבון
                                         הבראה</a></li>
-                                <li><a class="dropdown-item text-light text-center text-lg-end" href="/calculators/early-notification.html">מחשבון הודעה מוקדמת</a></li>
+                                <li><a class="dropdown-item text-light text-center text-lg-end"
+                                        href="/calculators/early-notification.html">מחשבון הודעה מוקדמת</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="scroll-btn nav-link active" href="#contact-us">צרו קשר</a>
+                            <a class="scroll-btn nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#contact-us">צרו קשר</a>
                         </li>
                     </ul>
                 </div>
@@ -119,11 +131,11 @@
                         </ul>
                         <p class="mt-5 fs-4 fw-bold">גישה ישירה לנתוני השכר והנוכחות אונליין מכל מקום ובכל רגע נתון!</p>
                     </div>
-                    <button href="#contact-us"
-                        class="scroll-btn mx-auto cta fs-5 fw-bolder text-dark rounded-pill border-2 py-2 px-5 mt-5">
+                    <a href="#contact-us"
+                        class="scroll-btn col-8 col-sm-6 col-md-4 col-lg-2 align-self-center btn bg-primary rounded-pill clr-hover bg-clr-hover fw-bold fs-5">
                         דברו
                         איתנו
-                    </button>
+                    </a>
                 </div>
             </section>
         </div>
@@ -153,7 +165,7 @@
         <div class="container break bg-secondary bg-gradient mb-5 mt-5 rounded-pill"></div>
         <section id="who-we-are" class="who-we-are container-fluid">
             <div class="container pt-5 pb-2 px-5 d-flex flex-row-reverse">
-                <img src="/assets/imgs/profile-img.jpg" alt="" class="mb-5 mb-lg-0">
+                <img src="/assets/imgs/profile-img.jpg" alt="" class="mb-5 mb-lg-0 shadow">
                 <div class="text-container container d-flex flex-column align-content-center justify-content-center">
                     <h1 class="heading color fs-1 mb-3">
                         יהודה רייזנר
@@ -183,10 +195,10 @@
             </div>
 
         </section>
-        <div class="container break bg-secondary bg-gradient mb-5 mt-5 rounded-pill"></div>
+        <div class="container break bg-secondary bg-gradient mb-2 mt-5 rounded-pill"></div>
 
         <section id="why-us"
-            class="why-us w-100 pt-2 pb-2 container-fluid align-items-center justify-content-center d-grid text-center">
+            class="why-us w-100 pt-5 pb-2 container-fluid align-items-center justify-content-center d-grid text-center">
             <h1 class="heading fs-1 mb-3 fw-bold">
                 <span class="color">למה דווקא</span> י.ר שכר
                 <span class="color d-block fs-3 fw-normal">שירותי חשבות שכר במיקור חוץ?</span>
@@ -224,9 +236,9 @@
             </div>
 
         </section>
-        <div class="container break bg-secondary bg-gradient mb-5 mt-5 rounded-pill"></div>
+        <div class="container break bg-secondary bg-gradient mb-2 mt-5 rounded-pill"></div>
 
-        <section id="services" class="services container-fluid pt-2 pb-5">
+        <section id="services" class="services container-fluid pt-5 pb-5">
             <h1 class="heading fs-1 mb-5 color text-center fw-bold">
                 אז מה אנחנו מציעים?
             </h1>
@@ -424,7 +436,8 @@
                         </a>
                     </span>
                     <span class="col-2 text-center text-light col-md-3">
-                        <a id="contact-header-phone" href="tel:0747490061" class="text-light clr-hover fs-4 text-decoration-none">
+                        <a id="contact-header-phone" href="tel:0747490061"
+                            class="text-light clr-hover fs-4 text-decoration-none">
                             <span class="desktop-show fs-6 ms-1 color">074-749-0061</span>
                             <i class="fas fa-phone-alt color"></i>
                         </a>
@@ -439,15 +452,18 @@
                 <div class="contact-form">
                     <form action="/mail-sent.html" method="POST" netlify>
                         <div class="form-floating mb-3 text-end">
-                            <input type="text" class="form-control" id="full_name" name="full_name" placeholder="שם מלא" required autocomplete="off">
+                            <input type="text" class="form-control" id="full_name" name="full_name" placeholder="שם מלא"
+                                required autocomplete="off">
                             <label for="full_name" class="end-0 t-origin-end">שם מלא</label>
                         </div>
                         <div class="form-floating mb-3 text-end">
-                            <input type="tel" class="form-control" id="phone_number" name="phone_number" placeholder="טלפון" required autocomplete="off">
+                            <input type="tel" class="form-control" id="phone_number" name="phone_number"
+                                placeholder="טלפון" required autocomplete="off">
                             <label for="phone_number" class="end-0 t-origin-end">טלפון</label>
                         </div>
                         <div class="form-floating mb-5">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required autocomplete="off">
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="name@example.com" required autocomplete="off">
                             <label for="email" class="end-0 t-origin-end">דואר אלקטרוני</label>
                         </div>
 
@@ -463,7 +479,7 @@
 
         <footer class="container-fluid credit bg-dark py-1 px-5 fs-6 text-center text-light position-absolute bottom-0">
             האתר נבנה ועוצב על ידי <a href="https://tal-mekler.com"
-                class="color clr-hover text-decoration-none d-block d-sm-inline-block">טל מקלר
+                class="color clr-hover text-decoration-none d-block d-sm-inline-block" target="_blank">טל מקלר
                 - Tal Mekler Developer</a>
         </footer>
     </main>

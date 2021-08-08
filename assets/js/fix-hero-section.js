@@ -1,3 +1,3 @@
 setInterval(() => {
-    document.querySelector("#hero-section").style.height = `${window.innerHeight - document.querySelector("header").clientHeight}px`;
+    document.querySelector("#hero-section").style.minHeight = `${window.innerHeight - document.querySelector("header").clientHeight}px`;
 }, 10);
