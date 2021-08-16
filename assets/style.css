@@ -188,6 +188,13 @@ main .hero-container {
   background-position: center center;
 }
 
+@media screen and (max-width: 520px) {
+  main .hero-container {
+    background-size: 100% 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
 main .hero-container #hero-section {
   -webkit-box-sizing: content-box !important;
           box-sizing: content-box !important;
