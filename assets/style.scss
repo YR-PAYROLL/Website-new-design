@@ -173,7 +173,7 @@ main {
         background-size: cover;
         @media screen and(max-width: 520px) {
             background-size: auto 100%;
-            background-color: rgba(black, 0.80);
+            background-color: rgba(black, 0.825);
             background-attachment: unset;
         }
         background-position: center center;
@@ -507,9 +507,14 @@ main {
         background-color: rgba(black, 0.95);
         background-blend-mode: multiply;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position: center center;
+        background-size: cover;
         background-attachment: fixed;
+        @media screen and(max-width: 520px) {
+            background-size: auto 100%;
+            background-color: rgba(black, 0.825);
+            background-attachment: unset;
+        }
+        background-position: center center;
 
         .contact-box {
             border-radius: 10px !important;

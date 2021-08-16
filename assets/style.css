@@ -191,7 +191,7 @@ main .hero-container {
 @media screen and (max-width: 520px) {
   main .hero-container {
     background-size: auto 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.825);
     background-attachment: unset;
   }
 }
@@ -631,9 +631,17 @@ main #contact-us {
   background-color: rgba(0, 0, 0, 0.95);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
+  background-position: center center;
+}
+
+@media screen and (max-width: 520px) {
+  main #contact-us {
+    background-size: auto 100%;
+    background-color: rgba(0, 0, 0, 0.825);
+    background-attachment: unset;
+  }
 }
 
 main #contact-us .contact-box {
