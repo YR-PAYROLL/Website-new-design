@@ -9,6 +9,7 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 10, function () {
+            document.location.hash = ''
 
             setTimeout(() => {
                 $('html, body').animate({
@@ -16,9 +17,10 @@ $(document).ready(function () {
                 }, 800, function () {
 
                     // Add hash (#) to URL when done scrolling (default click behavior)
+                    
 
                 });
-            }, 100);
+            }, 10);
 
         });
 
@@ -31,7 +33,6 @@ $(document).ready(function () {
         if (this.hash !== "") {
             // Prevent default anchor click behavior
             event.preventDefault();
-
             // Store hash
             var hash = this.hash;
 
@@ -49,6 +50,8 @@ $(document).ready(function () {
             }, 800, function () {
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
+                document.location.hash = ''
+                
 
             });
         } // End if
