@@ -19,6 +19,9 @@ $primary-hover: rgb(218, 105, 0);
 .ltr {
     direction: ltr !important;
 }
+.ul-style-V {
+    list-style: url('/assets/imgs/check.svg');
+}
 .hover-clr {
     &:hover {
         color: $primary !important;

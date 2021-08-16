@@ -13,6 +13,10 @@
   direction: ltr !important;
 }
 
+.ul-style-V {
+  list-style: url("/assets/imgs/check.svg");
+}
+
 .hover-clr:hover {
   color: #ff7b00 !important;
 }
