@@ -171,6 +171,10 @@ main {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
+        @media screen and(max-width: 520px) {
+            background-size: 100% 100%;
+        }
+
         background-position: center center;
         #hero-section {
             box-sizing: content-box !important;
