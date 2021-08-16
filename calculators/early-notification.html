@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+    <script src="../assets/js/fix-main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" defer></script>
+    <script src="../assets/js/calculators/set-today.js" defer></script>
+    <script src="../assets/js/calculators/date-checker.js" defer></script>
+    <script src="../assets/js/calculators/early-notification.js" defer></script>
+    <script src="../assets/js/date-slash-fix.js" defer></script>
+
+    <!-- Title -->
+    <title>YR-Payroll</title>
+</head>
+
+<body>
+    <header class="ltr w-100 fixed-top shadow-sm">
+        <div class="ltr conatiner row contact-bar align-content-center justify-content-center w-100 m-0">
+            <span class="col-2 text-center text-light">
+                <a class="text-light hover-clr fs-4" href="https://wa.me/0747490061">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </span>
+            <span class="col-2 text-center text-light">
+                <a href="tel:0747490061" class="text-light hover-clr fs-4 text-decoration-none">
+                    <span class="desktop-show fs-6 ms-1">074-749-0061</span>
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+            </span>
+            <span class="col-2 text-center text-light">
+                <a href="mailto:yr.salpayroll@gmail.com" class="text-light hover-clr fs-4">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </span>
+        </div>
+        <nav class="ltr navbar navbar-expand-lg navbar-dark bg-dark w-100 m-0 text-center">
+            <div class="ltr container align-content-center">
+                <a class="navbar-brand align-content-center justify-content-center d-flex" href="/">
+                    <span class="align-self-center ms-2 fs-6">י.ר שכר</span>
+                    <img src="../assets/imgs/YR-logo.svg" alt="" width="75" height="50"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="justify-content-start collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="text-center navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">בית</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/#who-we-are">מי אנחנו?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/#why-us">למה אנחנו?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/#services">השירותים שלנו</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/#testimonials">המלצות</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                מחשבוני שכר
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item text-light text-center text-lg-end"
+                                        href="/calculators/brutto-neto-calculator.html">מחשבון ברוטו-נטו | עלות
+                                        מעביד</a></li>
+                                <li><a class="dropdown-item text-light text-center text-lg-end"
+                                        href="../calculators/vacation-and-recovery.html">מחשבון חופשה / מחשבון
+                                        הבראה</a></li>
+                                <li><a class="dropdown-item text-light text-center text-lg-end" href="../calculators/early-notification.html">מחשבון הודעה מוקדמת</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/#contact-us">צרו קשר</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-calculator-page container-fluid position-relative p-0 mb-5 pt-3 pb-5">
+        <p class="calculator-page-title py-1 px-5 fw-bold text-center fs-5 mb-5">
+            מחשבון הודעה מוקדמת
+        </p>
+
+        <div class="calc-container container">
+            <div class="date-container start-container mb-4 container align-items-start justify-content-around d-grid">
+                <p class="heading fs-5 fw-bold d-inline-block text-center mx-auto my-0">
+                    תאריך תחילת עבודה
+                    <span id="start-calc-error"
+                        class="error-msg border-0 bg-transparent translate-middle-y mt-2 form-control text-danger is-invalid lh-1">אנו
+                        מצטערים... התאריך אינו תקין</span>
+                </p>
+                <input id="start-calc"
+                    class="date-input border form-control border-dark py-1 px-2 text-center rounded bg-light translate-middle-y"
+                    type="text" placeholder="dd/mm/yyyy">
+            </div>
+            <div class="date-container end-container mb-4 container align-items-start justify-content-around d-grid">
+                <p class="heading fs-5 fw-bold d-inline-block text-center mx-auto my-0">
+                    תאריך חישוב
+                    <span id="end-calc-error"
+                        class="error-msg border-0 bg-transparent translate-middle-y mt-2 form-control text-danger is-invalid lh-1">אנו
+                        מצטערים... התאריך אינו תקין</span>
+                </p>
+                <input id="end-calc"
+                    class="date-input border form-control border-dark py-1 px-2 text-center rounded bg-light translate-middle-y"
+                    type="text" placeholder="dd/mm/yyyy">
+            </div>
+            <div class=" worker-type-container m-0 mb-4 container d-grid row align-items-center justify-content-center">
+                <p class="heading fs-5 text-center mx-auto my-0 fw-bold">סוג עובד</p>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group d-flex">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" value="1" checked>
+                    <label class="btn btn-outline-dark shadow-none fs-6 rounded-0 rounded-end" for="btnradio1">חודשי</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" value="2">
+                    <label class="btn btn-outline-dark shadow-none fs-6 rounded-0 rounded-start" for="btnradio2">שעתי / יומי</label>
+                  </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex align-items-center justify-content-center py-2">
+            <button type="button" onclick="calc()" class="btn btn-outline-dark shadow-none my-5 rounded-pill col-12 col-sm-8 col-md-6 col-lg-4 fs-6">חישוב</button>
+        </div>
+
+
+        <!-- Results -->
+        <div class="result-container container-fluid w-100 h-100 position-fixed fixed-top zindex-overall calc-result text-light d-flex justify-content-center align-items-center">
+            <div class="container d-grid align-items-center justify-content-center">
+                <div class="box h-100 w-100 align-items-center justify-content-center d-flex">
+                    <div class="inner-box">
+                        <div class="res five-days-work border-bottom border-top border-secondary m-0 py-2 px-1 form-item">
+                            <p class="p-0 m-0 fs-6">
+                                ימי הודעה מוקדמת: <span id="notice-days-res"></span>
+                            </p>
+                        </div>
+                        <div class="res six-days-work border-bottom border-secondary m-0 py-2 px-1 form-item">
+                            <p class="p-0 m-0 fs-6">
+                                תאריך סיום יחסי עבודה: <span id="end-date-of-work-res"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center mt-5">
+                    <button class="btn-close text-center close-btn btn-close-white" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid credit bg-dark py-1 px-5 fs-6 text-center text-light position-absolute bottom-0">
+            האתר נבנה ועוצב על ידי <a href="https://tal-mekler.com"
+                class="color clr-hover text-decoration-none d-block d-sm-inline-block" target="_blank">טל מקלר
+                - Tal Mekler Developer</a>
+        </footer>
+    </main>
+
+</body>
+
+</html>

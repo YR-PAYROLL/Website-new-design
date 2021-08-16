@@ -1,0 +1,14 @@
+@mixin window_maxWidth($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+@mixin window_minWidth($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin sect-padding {
+    padding: rem(80) rem(150);
+}
