@@ -184,7 +184,7 @@ header nav .dropdown-menu .dropdown-item:hover {
 
 main .hero-container {
   background: url("/assets/imgs/landing-page-bg.png");
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.9);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -632,7 +632,7 @@ main .testimonials__view .testimonials-wrapper .testimonial__profile__name, main
 
 main #contact-us {
   background: url("../assets/imgs/contact-section-bg.png");
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.9);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
