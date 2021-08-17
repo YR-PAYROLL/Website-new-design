@@ -12,6 +12,7 @@ $primary-hover: rgb(218, 105, 0);
 * {
     outline: none;
     direction: rtl;
+    scroll-behavior: smooth;
     &:not(i) {
         font-family: $font-family-sans-serif !important;
     }
@@ -19,9 +20,14 @@ $primary-hover: rgb(218, 105, 0);
 .ltr {
     direction: ltr !important;
 }
+.translate-y-custom {
+    $translate-y: 0;
+    transform: translate($translate-y);
+}
 .ul-style-V {
     list-style: url('/assets/imgs/check.svg');
 }
+
 .hover-clr {
     &:hover {
         color: $primary !important;
