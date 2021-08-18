@@ -48,7 +48,7 @@ $(document).ready(function () {
                 dest = $(hash).offset().top - $("nav").innerHeight() - $(".contact-bar").innerHeight() + $("nav ul").innerHeight()
                 if ($(window).width() < 992) {
                     setTimeout(() => {
-                        dest = $(hash).offset().top - $("nav").innerHeight() - $(".contact-bar").innerHeight() + $("nav ul").innerHeight()
+                        dest = $(hash).offset().top - $("nav").innerHeight() - $(".contact-bar").innerHeight();
                     }, 200);
                 }
             }
