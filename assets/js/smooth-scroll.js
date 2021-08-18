@@ -17,14 +17,7 @@ $(document).ready(function () {
             document.location.hash = ''
 
             setTimeout(() => {
-                $('html, body').animate({
-                    scrollTop: dest
-                }, 800, function () {
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    
-
-                });
+                Scroll(dest)
             }, 10);
 
         });
@@ -47,23 +40,30 @@ $(document).ready(function () {
             if (hash !== "#hero-section") {
                 dest = $(hash).offset().top - $("nav").innerHeight() - $(".contact-bar").innerHeight() + $("nav ul").innerHeight()
                 if ($(window).width() < 992) {
+                    // Mobile
                     setTimeout(() => {
-                        dest = $(hash).offset().top - $("nav").innerHeight() - $(".contact-bar").innerHeight();
-                    }, 200);
+                        dest = $(hash).offset().top - $("header").innerHeight();
+                        Scroll(dest);
+                    }, 250);
+                    console.log("after time out")
+                }else {
+                    Scroll(dest);
                 }
+            }else {
+                Scroll(dest);
             }
-            // else {
-            //     dest = $(hash).offset().top - $("header").innerHeight()
-            // }
-            $('html, body').animate({
-                scrollTop: dest
-            }, 800, function () {
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                document.location.hash = ''
-                
-
-            });
         } // End if
     });
 });
+
+function Scroll(dest) {
+    $('html, body').animate({
+        scrollTop: dest
+    }, 800, function () {
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        document.location.hash = ''
+        
+
+    });
+}
