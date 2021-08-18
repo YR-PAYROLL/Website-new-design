@@ -5,6 +5,11 @@ $(document).ready(function () {
         var dest = 0
         if (currentHash !== "#hero-section") {
             dest = $(currentHash).offset().top - $("nav").innerHeight() - $(".contact-bar").innerHeight() + $("nav ul").innerHeight()
+            if ($(window).width() < 992) {
+                setTimeout(() => {
+                    dest = $(currentHash).offset().top - $("nav").innerHeight() - $(".contact-bar").innerHeight() + $("nav ul").innerHeight()
+                }, 200);
+            }
         }
         $('html, body').animate({
             scrollTop: 0
@@ -41,6 +46,11 @@ $(document).ready(function () {
             var dest = 0
             if (hash !== "#hero-section") {
                 dest = $(hash).offset().top - $("nav").innerHeight() - $(".contact-bar").innerHeight() + $("nav ul").innerHeight()
+                if ($(window).width() < 992) {
+                    setTimeout(() => {
+                        dest = $(hash).offset().top - $("nav").innerHeight() - $(".contact-bar").innerHeight() + $("nav ul").innerHeight()
+                    }, 200);
+                }
             }
             // else {
             //     dest = $(hash).offset().top - $("header").innerHeight()
