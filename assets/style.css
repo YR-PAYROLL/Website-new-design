@@ -19,6 +19,106 @@
           transform: translate(0);
 }
 
+.translate-y-custom-10 {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.translate-y-custom-20 {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.translate-y-custom-30 {
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+}
+
+.translate-y-custom-40 {
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+}
+
+.translate-y-custom-50 {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.translate-y-custom-60 {
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+.translate-y-custom-70 {
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+}
+
+.translate-y-custom-80 {
+  -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
+}
+
+.translate-y-custom-90 {
+  -webkit-transform: translateY(-90%);
+          transform: translateY(-90%);
+}
+
+.translate-y-custom-100 {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.translate-y-custom-110 {
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+}
+
+.translate-y-custom-120 {
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
+}
+
+.translate-y-custom-130 {
+  -webkit-transform: translateY(-130%);
+          transform: translateY(-130%);
+}
+
+.translate-y-custom-140 {
+  -webkit-transform: translateY(-140%);
+          transform: translateY(-140%);
+}
+
+.translate-y-custom-150 {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+}
+
+.translate-y-custom-160 {
+  -webkit-transform: translateY(-160%);
+          transform: translateY(-160%);
+}
+
+.translate-y-custom-170 {
+  -webkit-transform: translateY(-170%);
+          transform: translateY(-170%);
+}
+
+.translate-y-custom-180 {
+  -webkit-transform: translateY(-180%);
+          transform: translateY(-180%);
+}
+
+.translate-y-custom-190 {
+  -webkit-transform: translateY(-190%);
+          transform: translateY(-190%);
+}
+
+.translate-y-custom-200 {
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+}
+
 .ul-style-V {
   list-style: url("/assets/imgs/check.svg");
 }
